@@ -52,11 +52,16 @@ table {
 body {
   width: 800px;
   margin: auto;
+	font-family: 'Quicksand', sans-serif;
+}
+
+header {
+	padding: 50px 0;
 }
 
 h1 {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 30px;
+
+  font-size: 40px;
   padding: 20px 0 20px 0;
   background-color: white;
 }
@@ -71,7 +76,6 @@ div {
 }
 
 h2 {
-  font-family: 'Quicksand', sans-serif;
   font-weight: bold;
   font-size: 20px;
   padding-bottom: 10px;
@@ -84,7 +88,6 @@ nav {
 
 li {
   color: black;
-  font-family: 'Quicksand', sans-serif;
 }
 
 li:hover {
@@ -93,7 +96,6 @@ li:hover {
 
 a {
   text-decoration: none;
-  font-family: 'Quicksand', sans-serif;
   color: black;
 }
 
