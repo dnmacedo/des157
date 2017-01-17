@@ -57,6 +57,8 @@ body {
 header {
   padding: 30px 0 30px 0;
   background-color: white;
+	position: fixed;
+	width: 1024px;
 }
 
 h1, h2, h3, h4, li, p, a {
@@ -71,7 +73,7 @@ h1 {
 
 h2 {
   font-size: 45px;
-  padding: 10px 0 10px 0;
+  padding: 50px 30px 10px 30px;
 }
 
 h3 {
@@ -82,11 +84,12 @@ h3 {
 
 h4 {
   font-size: 20px;
+	padding: 0 0 0 30px;
 }
 
 div {
-  float: left;
-  padding: 50px 30px 0 30px;
+	position: fixed;
+	top: 170px;
   width: 224px;
   height: 800px;
   background-color: skyblue;
@@ -107,21 +110,23 @@ li a {
 }
 
 article {
-  float: left;
-  padding: 30px;
-  width: 680px;
+	float: right;
+	margin-top: 170px;
+  width: 800px;
   height: 800px;
   background-color: lightblue;
 }
 
 img {
   float: right;
+	padding: 40px 30px;
 }
 
 p {
   font-size: 18px;
   line-height: 20px;
-  padding: 50px 0 0 0;
+  padding: 40px 30px;
+	width: 500px;
 }
 
 footer {
