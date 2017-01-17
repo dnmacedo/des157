@@ -18,24 +18,23 @@ function setup() {
 function draw() {
   frameCnt=frameCnt + 1;
 
-  fill(255);
+  fill(0);
   ellipseMode(CENTER);
   strokeWeight(3);
-  stroke(abs(mouseX-2*pmouseX),abs(mouseY-2*pmouseY),0);
-  ellipse(mouseX,mouseY,50,50);
-  //line(pmouseX,pmouseY,mouseX,mouseY);
-   if(abs(mouseX-pmouseX)>10)
-   {
-   stroke(abs(mouseX-2*pmouseX),abs(mouseY-2*pmouseY),0);
-   increment=increment*1.01;
-   timeAccel=timeAccel+increment;
-   ellipse(mouseX,mouseY,50,50);
-}
-  else
-{
-   stroke(abs(mouseX-2*pmouseX),0,abs(mouseY-2*pmouseY));
-  increment=increment*1.01;
-   timeAccel=timeAccel+increment;
-   ellipse(mouseX,mouseY,50,50);
-}
+
+    //line(pmouseX,pmouseY,mouseX,mouseY);
+     if(abs(mouseX-pmouseX)>10)
+     {
+     stroke(abs(mouseX-2*pmouseX),abs(mouseY-2*pmouseY),0);
+     increment=increment*1.01;
+     timeAccel=timeAccel+increment;
+     ellipse(mouseX,mouseY,50,50);
+  }
+    else
+  {
+     stroke(abs(mouseX-2*pmouseX),0,abs(mouseY-2*pmouseY));
+    increment=increment*1.01;
+     timeAccel=timeAccel+increment;
+     ellipse(mouseX,mouseY,50,50);
+  }
 }
