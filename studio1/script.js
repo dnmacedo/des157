@@ -33,7 +33,7 @@ function draw() {
     else
   {
      stroke(abs(mouseX-2*pmouseX),0,abs(mouseY-2*pmouseY));
-    increment=increment*1.01;
+     increment=increment*1.01;
      timeAccel=timeAccel+increment;
      ellipse(mouseX,mouseY,50,50);
   }
