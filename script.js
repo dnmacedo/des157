@@ -11,7 +11,7 @@ function draw() {
        stroke(200);
 
        textSize(30);
-       fill(200, 200, 200);
+       fill(0, 0, 0);
        text("press for a party", 300, 125);
 
        if(mouseIsPressed) {
