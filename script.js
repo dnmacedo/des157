@@ -1,32 +1,24 @@
-var timeAccel=1.0;
-var increment=1.0;
-
-
 function setup() {
 
-  var myCanvas = createCanvas(800, 250);
+   var myCanvas = createCanvas(800, 250);
 
-  myCanvas.parent("mySketch");
-
-  background(0);
+    myCanvas.parent('mySketch');
 }
-
 
 function draw() {
 
-  fill(0);
-  ellipseMode(CENTER);
-  strokeWeight(3);
+       fill(0);
+       stroke(200);
 
-    //line(pmouseX,pmouseY,mouseX,mouseY);
-     if(abs(mouseX-pmouseX)>10)
-     {
-     stroke(abs(mouseX-2*pmouseX),abs(mouseY-2*pmouseY),0);
-     ellipse(mouseX,mouseY,50,50);
-  }
-    else
-  {
-     stroke(abs(mouseX-2*pmouseX),0,abs(mouseY-2*pmouseY));
-     ellipse(mouseX,mouseY,50,50);
-  }
+       textSize(30);
+       fill(200, 200, 200);
+       text("press for a party", 300, 125);
+
+       if(mouseIsPressed) {
+
+       fill(random(130, 255), random(130, 255), random(130,255));
+       ellipse(random(0, 800), random(0, 250), 20, 20);
+
+
+       }
 }
