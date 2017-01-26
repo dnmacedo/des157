@@ -1,0 +1,49 @@
+<!--NOTE: Replace all of the uppercase text from glenda with your own custom content-->
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>finding the minimum</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px
+        }
+
+        body {
+            font-family: Verdana, Geneva, sans-serif;
+            color: white;
+            background-color: #333;
+            font-size: 11px;
+            margin: 24px;
+        }
+
+        h1 {
+            margin-bottom: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Chapter 3, finding the minimum</h1>
+    <h2>open the console to see the results of the script</h2>
+    <script>
+        // write a function to find the minimum number between two arguments
+        function min(num1, num2) {
+          //write a condition for when one number is bigger than the other
+          if(num1>num2) {
+            //return the other number that is smaller
+            return num2;
+        }
+
+        //write a condition that otherwise returns the other number if the opposite is true
+          else {
+            return num1;
+          }
+        };
+        //write a console to print out results of two arguments
+        console.log(min(0, 10));
+        console.log(min(0, -10));
+    </script>
+</body>
