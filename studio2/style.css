@@ -88,10 +88,11 @@ form, p {
 }
 
 p {
-  padding: 30px;
+  padding: 25px 30px;
   color: black;
   font-size: 28px;
   font-weight: bold;
+  line-height: 25px;
   float: right;
   width: 550px;
   background-image: url(https://images.freecreatives.com/wp-content/uploads/2015/10/free-lined-paper-texture.jpg);
