@@ -61,13 +61,16 @@ h1, article {
 }
 
 h1 {
-  font-size: 60px;
+  margin-bottom: 30px;
+  margin-left: 100px;
+  font-size: 80px;
+  font-weight: bold;
   color: white;
-  padding: 0;
+  padding: 30px 0 0 30px;
 }
 
 article {
-  margin: 50px;
+  margin: 0 50px;
   display: block;
 }
 
@@ -88,6 +91,7 @@ p {
   padding: 30px;
   color: black;
   font-size: 28px;
+  font-weight: bold;
   float: right;
   width: 550px;
   background-image: url(https://images.freecreatives.com/wp-content/uploads/2015/10/free-lined-paper-texture.jpg);
@@ -123,12 +127,10 @@ input[type="reset"], input[type="submit"] {
 }
 
 footer {
-  display: block;
   clear: both;
-  position: absolute;
+  width: 1000px;
+  height: 50px;
   bottom: 0;
-  padding: 20px;
-  right: 100px;
 }
 
 footer a {
@@ -136,6 +138,6 @@ footer a {
   font-weight: bold;
   text-decoration: none;
   color: white;
-  padding-right: 90px;
-  padding-left: 90px;
+  float: right;
+  padding: 20px 90px;
 }
