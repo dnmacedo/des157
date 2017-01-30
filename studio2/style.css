@@ -72,6 +72,9 @@ h1 {
 article {
   margin: 0 50px;
   display: block;
+  background: rgb(50,50,50);
+  padding: 30px;
+  border-radius: 10px;
 }
 
 label {
