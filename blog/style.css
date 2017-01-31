@@ -55,10 +55,15 @@ body {
 }
 
 header {
-  padding: 30px 0 30px 0;
+  padding: 15px 0;
   background-color: white;
-	position: fixed;
 	width: 1024px;
+}
+
+.wrapper {
+	width: 1024px;
+	margin: auto;
+	position: relative;
 }
 
 h1, h2, h3, h4, li, p, a {
@@ -67,17 +72,18 @@ h1, h2, h3, h4, li, p, a {
 
 h1 {
   font-weight: bold;
-  font-size: 60px;
+  font-size: 40px;
   color: black;
 }
 
 h2 {
   font-size: 45px;
   padding: 50px 30px 10px 30px;
+	clear:both;
 }
 
 h3 {
-  font-size: 30px;
+  font-size: 25px;
   padding: 10px;
   color: black;
 }
@@ -92,16 +98,21 @@ h4 {
 }
 
 div {
-	position: fixed;
-	top: 170px;
+	position: absolute;
+	top: 0;
   width: 224px;
-  height: 800px;
+	height: 100%;
   background-color: skyblue;
 }
 
 nav {
   line-height: 25px;
-	padding-left: 20px;
+	padding-left: 30px;
+	top: 200px;
+}
+
+div h3, nav {
+	position: fixed;
 }
 
 li:hover {
@@ -115,31 +126,35 @@ li a {
 }
 
 article {
-	float: right;
-	margin-top: 170px;
+	position: relative;
+	left: 224px;
+	top: 0;
   width: 800px;
-  height: 800px;
+  height: 100%;
   background-color: lightblue;
 }
 
+
 img {
-  float: right;
+  position: relative;
+	display: inline-block;
 	padding: 40px 30px;
+
 }
 
 p {
   font-size: 18px;
   line-height: 20px;
-  padding: 40px 30px;
-	width: 500px;
+  padding-left: 30px;
+	padding-bottom: 30px;
+	width: 600px;
+
 }
 
 footer {
   padding: 20px 0 20px 0;
-  clear: both;
   width: 1024px;
-  position: fixed;
-  bottom: 0;
+  margin: auto;
   background-color: white;
 }
 
