@@ -55,7 +55,6 @@ body {
   width: 1024px;
   margin: auto;
   font-family: 'Dosis', sans-serif;
-  background-color: lightblue;
 }
 
 header {
@@ -109,6 +108,10 @@ article p {
 
 p {
   font-size: 20px;
+}
+
+#topic {
+	width: 700px;
 }
 
 img {
