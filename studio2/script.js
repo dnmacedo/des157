@@ -1,3 +1,6 @@
+document.addEventListener("DOMContentLoaded", function(event){
+  console.log("DOM fully loaded and parsed");
+
 console.log('reading');
 
   //make an array for entries
@@ -95,3 +98,5 @@ function clearForm () {
   myMsg.innerHTML="";
   myMsg.hide;
 }
+
+});
