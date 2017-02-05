@@ -57,7 +57,8 @@ body {
   background-repeat: no-repeat;
   background-position: top left;
   background-size: 1400px;
-  margin: auto;
+  margin: 0;
+	width: 1400px;
   min-height: 1333px;
 
   font-family: 'Loved by the King', cursive;
@@ -69,14 +70,14 @@ body {
 
 header {
   position: absolute;
-  right: 0;
+  left: 600px;
   width: 800px;
   height: 150px;
   /*background-color: green;*/
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 60px;
   padding-top: 80px;
 }
 
@@ -85,7 +86,7 @@ h1 {
 aside {
 	position: absolute;
 	width: 400px;
-	right: 150px;
+	left: 700px;
 	top: 300px;
 	margin-right: 150px;
 }
@@ -111,7 +112,7 @@ aside a:hover {
 #cat {
 	position: absolute;
 	top: 600px;
-	right: 100px;
+	left: 900px;
 }
 
 /*style pop up messages*/
@@ -121,7 +122,7 @@ section {
 	top: 0;
 	color: white;
 	background-color: black;
-	width: 100%;
+	width: 1400px;
 	height: 1300px;
 	background-color: black;
 	display: none;
@@ -166,10 +167,10 @@ button {
 footer {
   position: absolute;
 	bottom: 0;
+	right: 0;
+	left: 0;
   height: 50px;
 	padding: 40px;
-	width: 1300px;
-	margin: auto;
   background-color: green;
 }
 
