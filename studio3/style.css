@@ -165,9 +165,20 @@ button {
 
 footer {
   position: absolute;
+	bottom: 0;
   height: 50px;
-	width: 100%;
+	padding: 40px;
+	width: 1300px;
+	margin: auto;
   background-color: green;
+}
+
+footer a {
+	float: right;
+	text-decoration: none;
+	color: white;
+	font-size: 25px;
+	padding: 0 40px;
 }
 
 @media (max-width: 1024px){

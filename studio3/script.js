@@ -14,12 +14,12 @@ cat.addEventListener('click', function()
 
 cat.addEventListener('mouseover', function()
 {
-  cat.style.transition = "filter 1s";
+  cat.style.transition = "filter .5s";
 });
 
 cat.addEventListener('mouseout', function()
 {
-  cat.style.transition = "filter 1s";
+  cat.style.transition = "filter 2s";
 })
 
 close.addEventListener('click', function()
