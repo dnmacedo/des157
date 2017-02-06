@@ -31,17 +31,47 @@ cat.addEventListener('mouseout', function()
   cat.style.transition = "filter .5s";
 })
 
-// record.addEventListener('mouseover', function()
-// {
-//   record.style.transition = "filter .5s";
-// })
-//
-// record.addEventListener('mouseout', function()
-// {
-//   record.style.transition = "filter .5s";
-// })
+record.addEventListener('mouseover', function()
+{
+  record.style.transition = "filter .5s";
+})
 
-// make all the functions for the pop up info
+record.addEventListener('mouseout', function()
+{
+  record.style.transition = "filter .5s";
+})
+
+ring.addEventListener('mouseover', function()
+{
+  ring.style.transition = "filter .5s";
+})
+
+ring.addEventListener('mouseout', function()
+{
+  ring.style.transition = "filter .5s";
+})
+
+tamb.addEventListener('mouseover', function()
+{
+  tamb.style.transition = "filter .5s";
+})
+
+tamb.addEventListener('mouseout', function()
+{
+  tamb.style.transition = "filter .5s";
+})
+
+shirt.addEventListener('mouseover', function()
+{
+  shirt.style.transition = "filter .5s";
+})
+
+shirt.addEventListener('mouseout', function()
+{
+  shirt.style.transition = "filter .5s";
+})
+
+//make all the functions for the pop up info click functions
 
 cat.addEventListener('click', function()
 {

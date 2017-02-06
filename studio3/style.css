@@ -141,7 +141,7 @@ aside a:hover {
 }
 
 img:hover {
-	filter: brightness(150%);
+	filter: brightness(180%);
 }
 
 /*style pop up messages*/
