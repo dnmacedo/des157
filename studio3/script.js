@@ -106,19 +106,16 @@ shirt.addEventListener('click', function()
   shirtInfo.style.display = "block";
 })
 
-// // spin the record when audio plays!
-//
-// audio.addEventListener('playing', function()
-// {
-//   recordInfo.style.display = "none";
-//   recordGif.style.display = "block";
-// })
-//
-// audio.addEventListener('pause', function()
-// {
-//   recordInfo.style.display = "block";
-//   recordGif.style.display = "none";
-// })
+// function that pauses other audio when playing a new one
+
+document.addEventListener('play', function(song){
+    var audios = document.getElementsByTagName('audio');
+    for(var i = 0, len = audios.length; i < len;i++){
+        if(audios[i] != song.target){
+            audios[i].pause();
+        }
+    }
+}, true);
 
 // close function
 
