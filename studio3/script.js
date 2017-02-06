@@ -112,7 +112,7 @@ close.addEventListener('click', function()
   recordInfo.style.display = "none";
   ringInfo.style.display = "none";
   tambInfo.style.display = "none";
-  shirt.style.display = "none";
+  shirtInfo.style.display = "none";
 })
 
 });

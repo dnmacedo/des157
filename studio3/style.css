@@ -3,51 +3,47 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
 /*end of Eric Meyer's reset*/
+
 
 /*begin body styles*/
 
@@ -57,14 +53,13 @@ body {
   background-repeat: no-repeat;
   background-position: top left;
   background-size: 1354px;
-  margin: 0;
-	width: 1354px;
+  margin: auto;
+  width: 1354px;
   min-height: 1000px;
-
   font-family: 'Loved by the King', cursive;
   color: white;
-
 }
+
 
 /*begin header styles*/
 
@@ -81,147 +76,148 @@ h1 {
   padding-top: 85px;
 }
 
+
 /*inner content styles*/
 
 aside {
-	position: absolute;
-	width: 400px;
-	left: 700px;
-	top: 200px;
-	margin-right: 150px;
+  position: absolute;
+  width: 400px;
+  left: 700px;
+  top: 200px;
+  margin-right: 150px;
 }
 
 aside p {
-	font-size: 25px;
-	line-height: 35px;
-	padding-bottom: 50px;
+  font-size: 25px;
+  line-height: 35px;
+  padding-bottom: 50px;
 }
 
 aside a {
-	text-decoration: none;
-	color: white;
-	font-size: 18px;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
 }
 
 aside a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
+
 
 /*start hover-over image styles*/
 
 #cat {
-	position: absolute;
-	top: 410px;
-	left: 1020px;
-
+  position: absolute;
+  top: 441px;
+  left: 1042px;
 }
 
 #record {
-	position: absolute;
-	top:473px;
-	left:480px;
+  position: absolute;
+  top: 511px;
+  left: 512px;
 }
 
 #ring {
-	position: absolute;
-	top: 441px;
-	left: 471px;
+  position: absolute;
+  top: 476px;
+  left: 496px;
 }
 
 #tamb {
-	position: absolute;
-	top: 475px;
-	left: 179px;
+  position: absolute;
+  top: 590px;
+  left: 249px;
 }
 
 #shirt {
-	position: absolute;
-	left: -77px;
-	top: 719px;
+  position: absolute;
+  left: -5px;
+  top: 820px;
 }
 
 img:hover {
-	filter: brightness(180%);
+  filter: brightness(180%);
 }
+
 
 /*style pop up messages*/
 
 section {
-	position: absolute;
-	top: 0;
-	color: white;
-	background-color: black;
-	width: 1400px;
-	height: 1300px;
-	background-color: black;
-	display: none;
-	opacity: .9;
+  position: absolute;
+  top: 0;
+  color: white;
+  background-color: black;
+  width: 1400px;
+  height: 1300px;
+  background-color: black;
+  display: none;
+  opacity: .9;
 }
 
 div {
-	width: 700px;
-	height: 400px;
-	color: white;
-	display: none;
-	position: absolute;
-	top: 10%;
-	left: 25%;
+  width: 700px;
+  height: 400px;
+  color: white;
+  display: none;
+  position: absolute;
+  top: 10%;
+  left: 25%;
 }
 
 div img {
-	padding: 70px 30px;
+  padding: 70px 30px;
 }
 
 div p {
-	line-height: 30px;
-	position: relative;
-	font-size: 25px;
-	width: 400px;
-	float: right;
-	top: 100px;
-	padding-right: 30px;
+  line-height: 30px;
+  position: relative;
+  font-size: 25px;
+  width: 400px;
+  float: right;
+  top: 100px;
+  padding-right: 30px;
 }
 
 #play {
-	position: absolute;
-	clear: both;
-	top: 300px;
+  position: absolute;
+  clear: both;
+  top: 300px;
 }
 
 button {
-	cursor: pointer;
-	border: none;
-	border-radius: 30px;
-	font-size: 20px;
-	background-color: white;
-	position: absolute;
-	top: 10%;
-	right: 20%;
-	clear: both;
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  font-size: 20px;
+  background-color: white;
+  position: absolute;
+  top: 10%;
+  right: 20%;
+  clear: both;
 }
 
 footer {
   position: absolute;
-	top: 1000px;
-	left: 800px;
+  top: 1000px;
+  left: 800px;
   height: 50px;
-	padding-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 footer a {
-	float: right;
-	text-decoration: none;
-	color: white;
-	font-size: 25px;
-	padding: 0 40px;
+  float: right;
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  padding: 0 40px;
 }
 
 footer a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
-@media (max-width: 1024px){
-
+@media (max-width: 1024px) {
   body {
     background-size: 1025px;
   }
