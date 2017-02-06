@@ -58,7 +58,7 @@ body {
   background-position: top left;
   background-size: 1354px;
   margin: 0;
-	width: 1400px;
+	width: 1354px;
   min-height: 1000px;
 
   font-family: 'Loved by the King', cursive;
@@ -194,7 +194,7 @@ footer {
 	top: 1000px;
 	left: 800px;
   height: 50px;
-	padding: 40px;
+	padding-bottom: 30px;
 }
 
 footer a {
