@@ -111,8 +111,28 @@ aside a:hover {
 
 #cat {
 	position: absolute;
-	top: 600px;
-	left: 900px;
+	top: 428px;
+	left: 1005px;
+}
+
+#record {
+	position: absolute;
+	top:530px;
+	left:475px;
+}
+
+#ring {
+	position: absolute;
+	top: 440px;
+	left: 400px;
+}
+
+#tamb {
+	position: absolute;
+}
+
+#shirt {
+	position: absolute;
 }
 
 /*style pop up messages*/
@@ -154,7 +174,7 @@ div p {
 }
 
 img:hover {
-	filter: brightness(130%);
+	filter: brightness(150%);
 }
 
 button {
