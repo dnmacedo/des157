@@ -169,6 +169,10 @@ div img {
   padding: 70px 30px;
 }
 
+#recordGif {
+  display: none;
+}
+
 div p {
   line-height: 30px;
   position: relative;

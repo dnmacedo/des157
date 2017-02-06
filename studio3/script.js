@@ -17,6 +17,9 @@ var recordInfo = document.getElementById('recordInfo');
 var ringInfo = document.getElementById('ringInfo');
 var tambInfo = document.getElementById('tambInfo');
 var shirtInfo = document.getElementById('shirtInfo');
+// declare variable for audio controls
+var audio = document.getElementsByTagName('audio');
+var recordGif = document.getElementById('recordGif');
 // delcare close variable
 var close = document.getElementById('close');
 
@@ -102,6 +105,20 @@ shirt.addEventListener('click', function()
   info.style.display = "block";
   shirtInfo.style.display = "block";
 })
+
+// // spin the record when audio plays!
+//
+// audio.addEventListener('playing', function()
+// {
+//   recordInfo.style.display = "none";
+//   recordGif.style.display = "block";
+// })
+//
+// audio.addEventListener('pause', function()
+// {
+//   recordInfo.style.display = "block";
+//   recordGif.style.display = "none";
+// })
 
 // close function
 
