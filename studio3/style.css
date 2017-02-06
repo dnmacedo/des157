@@ -56,7 +56,7 @@ body {
   background-image: url("room.JPG");
   background-repeat: no-repeat;
   background-position: top left;
-  background-size: 1400px;
+  background-size: 1354px;
   margin: 0;
 	width: 1400px;
   min-height: 1000px;
@@ -70,7 +70,7 @@ body {
 
 header {
   position: absolute;
-  left: 600px;
+  left: 155px;
   width: 800px;
   height: 150px;
   /*background-color: green;*/
@@ -78,7 +78,7 @@ header {
 
 h1 {
   font-size: 60px;
-  padding-top: 80px;
+  padding-top: 85px;
 }
 
 /*inner content styles*/
@@ -87,7 +87,7 @@ aside {
 	position: absolute;
 	width: 400px;
 	left: 700px;
-	top: 300px;
+	top: 200px;
 	margin-right: 150px;
 }
 
@@ -111,33 +111,33 @@ aside a:hover {
 
 #cat {
 	position: absolute;
-	top: 447px;
+	top: 410px;
 	left: 1020px;
 
 }
 
 #record {
 	position: absolute;
-	top:510px;
+	top:473px;
 	left:480px;
 }
 
 #ring {
 	position: absolute;
-	top: 478px;
+	top: 441px;
 	left: 471px;
 }
 
 #tamb {
 	position: absolute;
-	top: 512px;
+	top: 475px;
 	left: 179px;
 }
 
 #shirt {
 	position: absolute;
 	left: -77px;
-	top: 757px;
+	top: 719px;
 }
 
 img:hover {
