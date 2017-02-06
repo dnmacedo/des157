@@ -182,7 +182,18 @@ div p {
 	padding-right: 30px;
 }
 
+#play {
+	position: absolute;
+	clear: both;
+	top: 300px;
+}
+
 button {
+	cursor: pointer;
+	border: none;
+	border-radius: 30px;
+	font-size: 20px;
+	background-color: white;
 	position: absolute;
 	top: 10%;
 	right: 20%;
