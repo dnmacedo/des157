@@ -1,33 +1,40 @@
 document.addEventListener("DOMContentLoaded", function(event){
   console.log("DOM fully loaded and parsed");
 
-// declare all variables
+
+//declare image variable
+var img = document.getElementsByTagName('img');
+// declare all png variables
 var cat = document.getElementById('cat');
 var record = document.getElementById('record');
+
+//declare all pop up window variables
 var info = document.getElementById('info');
 var catInfo =document.getElementById('catInfo');
+var recordInfo = document.getElementById('recordInfo');
+// delcare close variable
 var close = document.getElementById('close');
 
 // make all the functions for hovering effects
-cat.addEventListener('mouseover', function()
+img.addEventListener('mouseover', function()
 {
-  cat.style.transition = "filter .5s";
+  img.style.transition = "filter .5s";
 });
 
-cat.addEventListener('mouseout', function()
+img.addEventListener('mouseout', function()
 {
-  cat.style.transition = "filter .5s";
+  img.style.transition = "filter .5s";
 })
 
-record.addEventListener('mouseover', function()
-{
-  record.style.transition = "filter .5s";
-})
-
-record.addEventListener('mouseout', function()
-{
-  record.style.transition = "filter .5s";
-})
+// record.addEventListener('mouseover', function()
+// {
+//   record.style.transition = "filter .5s";
+// })
+//
+// record.addEventListener('mouseout', function()
+// {
+//   record.style.transition = "filter .5s";
+// })
 
 // make all the functions for the pop up info
 

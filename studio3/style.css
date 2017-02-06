@@ -59,7 +59,7 @@ body {
   background-size: 1400px;
   margin: 0;
 	width: 1400px;
-  min-height: 1333px;
+  min-height: 1000px;
 
   font-family: 'Loved by the King', cursive;
   color: white;
@@ -111,28 +111,37 @@ aside a:hover {
 
 #cat {
 	position: absolute;
-	top: 428px;
-	left: 1005px;
+	top: 447px;
+	left: 1020px;
+
 }
 
 #record {
 	position: absolute;
-	top:530px;
-	left:475px;
+	top:510px;
+	left:480px;
 }
 
 #ring {
 	position: absolute;
-	top: 440px;
-	left: 400px;
+	top: 478px;
+	left: 471px;
 }
 
 #tamb {
 	position: absolute;
+	top: 512px;
+	left: 179px;
 }
 
 #shirt {
 	position: absolute;
+	left: -77px;
+	top: 757px;
+}
+
+img:hover {
+	filter: brightness(150%);
 }
 
 /*style pop up messages*/
@@ -173,10 +182,6 @@ div p {
 	padding-right: 30px;
 }
 
-img:hover {
-	filter: brightness(150%);
-}
-
 button {
 	position: absolute;
 	top: 10%;
@@ -186,12 +191,10 @@ button {
 
 footer {
   position: absolute;
-	bottom: 0;
-	right: 0;
-	left: 0;
+	top: 1000px;
+	left: 800px;
   height: 50px;
 	padding: 40px;
-  background-color: green;
 }
 
 footer a {
@@ -200,6 +203,10 @@ footer a {
 	color: white;
 	font-size: 25px;
 	padding: 0 40px;
+}
+
+footer a:hover {
+	text-decoration: underline;
 }
 
 @media (max-width: 1024px){
