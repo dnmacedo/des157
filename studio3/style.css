@@ -182,7 +182,7 @@ div p {
   padding-right: 30px;
 }
 
-#play {
+.play {
   position: absolute;
   clear: both;
   top: 0;
@@ -221,7 +221,6 @@ footer p {
   color: antiquewhite;
   line-height: 32px;
   padding-bottom: 50px;
-
 }
 
 footer a {
@@ -242,95 +241,74 @@ footer a:hover {
     width: 1024px;
     min-height: 600px;
   }
-
-
   header {
     position: absolute;
     left: 150px;
     width: 800px;
     height: 75px;
   }
-
   h1 {
     font-size: 43px;
     padding-top: 70px;
   }
-
-
   /*inner content styles*/
-
   aside {
     width: 300px;
     left: 525px;
     top: 150px;
     margin-right: 150px;
   }
-
   aside p {
     font-size: 20px;
     line-height: 28px;
     padding-bottom: 50px;
   }
-
   #cat {
     width: 96px;
     top: 333px;
     left: 788px;
   }
-
   #record {
     width: 448px;
     top: 387px;
     left: 388px;
   }
-
   #ring {
     width: 29px;
     top: 359px;
     left: 375px;
   }
-
   #tamb {
     width: 137px;
     top: 447px;
     left: 190px;
   }
-
   #shirt {
     width: 649px;
     left: 0;
     top: 620px;
   }
-
   section {
     width: 1024px;
     height: 900px;
   }
-
   div {
     left: 15%;
   }
-
   button {
     right: 10%;
   }
-
-
   footer {
     width: 1024px;
     top: 750px;
     height: 50px;
     padding-bottom: 50px;
   }
-
   footer p {
     text-align: left;
     padding-left: 50px;
   }
-
   footer a {
     font-size: 25px;
   }
-
-
 }
