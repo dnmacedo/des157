@@ -56,7 +56,7 @@ body {
   margin: auto;
   width: 1354px;
   min-height: 1000px;
-  font-family: 'Loved by the King', cursive;
+  font-family: 'Reenie Beanie', cursive;
   color: antiquewhite;
 }
 
@@ -72,7 +72,7 @@ header {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 50px;
   padding-top: 85px;
 }
 
@@ -89,14 +89,14 @@ aside {
 
 aside p {
   font-size: 25px;
-  line-height: 35px;
+  line-height: 28px;
   padding-bottom: 50px;
 }
 
 aside a {
   text-decoration: none;
   color: white;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 aside a:hover {
@@ -174,7 +174,7 @@ div img {
 }
 
 div p {
-  line-height: 30px;
+  line-height: 25px;
   position: relative;
   font-size: 25px;
   width: 400px;
@@ -186,7 +186,8 @@ div p {
 #play {
   position: absolute;
   clear: both;
-  top: 300px;
+  top: 0;
+  left: 260px;
 }
 
 audio {
@@ -219,7 +220,7 @@ footer p {
   text-align: center;
   font-size: 20px;
   color: antiquewhite;
-  line-height: 28px;
+  line-height: 32px;
   padding-bottom: 50px;
 
 }
