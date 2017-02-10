@@ -111,7 +111,7 @@ p {
   font-size: 20px;
 }
 
-#topic {
+#topic, #background {
 	width: 700px;
 }
 
