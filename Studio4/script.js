@@ -10,8 +10,14 @@ var h2 = document.createElement('h2');
 var choice = document.getElementsByClassName('choice');
 var no = document.getElementById('no');
 var yes = document.getElementById('yes');
+// vars for when people press 'no'
 var reject = document.getElementById('reject');
-var response[] =
+var close = document.getElementById('close');
+var prompt = document.getElementById('prompt');
+var responses = ["Go ahead, try it! You never know what could happen.",
+  "Aw comon... that's no fun!", "Don't give up!", "There are few people that truly live. Press 'yes.'"]
+
+
 
 for(var i = 0; i < choice.length; i++){
 
@@ -25,11 +31,15 @@ choice[i].addEventListener('mouseout', function(){
 });
 }
 
-no.addEventListener('click', noPressed());
+no.addEventListener('click', function noPressed(){
+  var response = responses[Math.floor(Math.random()*responses.length)];
+  prompt.innerHTML = response;
+  reject.style.display = 'block';
+});
 
-function noPressed(){
-  reject.innerHTML = ''
-}
+close.addEventListener('click', function okayPressed(){
+  reject.style.display = 'none';
 
+})
 
 });

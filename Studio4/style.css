@@ -111,15 +111,31 @@ div p {
 
 #reject {
   top: 0;
+	text-align: center;
   padding-top: 100px;
   position: absolute;
   width: 1024px;
   height: 1000px;
   background-color: white;
   font-size: 30px;
-  display: block;
+  display: none;
 }
 
-#reject p {
+#prompt {
   color: black;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+}
+
+button {
+	margin-top: 50px;
+	width: 100px;
+	background-color: orange;
+	border-radius: 30px;
+	color: white;
+}
+
+#close {
+	text-align: center;
+	padding-bottom: 10px;
+	font-size: 20px;
 }
