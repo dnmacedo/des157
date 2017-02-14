@@ -76,8 +76,9 @@ section {
 
 .choice {
   position: relative;
+  left: 20%;
   display: inline-block;
-  margin: 12px 24px;
+  margin: 0 10%;
   border-radius: 30px;
   background-color: orange;
   width: 100px;
@@ -94,9 +95,31 @@ div p {
 }
 
 .grow {
+  position: relative;
+  left: 20%;
+  display: inline-block;
+  margin: 0 10%;
+  border-radius: 30px;
+  background-color: orange;
+  transition: all .2s ease;
   font-size: 40px;
   width: 120px;
   height: 70px;
   padding-top:15px;
   cursor: pointer;
+}
+
+#reject {
+  top: 0;
+  padding-top: 100px;
+  position: absolute;
+  width: 1024px;
+  height: 1000px;
+  background-color: white;
+  font-size: 30px;
+  display: block;
+}
+
+#reject p {
+  color: black;
 }
