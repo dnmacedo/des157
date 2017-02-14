@@ -200,3 +200,18 @@ li {
 img {
 	padding-left: 20px;
 }
+
+footer {
+	margin-top: 50px;
+	text-align: center;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+}
+
+footer a {
+	font-size: 16px;
+	text-decoration: none;
+	background-color: orange;
+	color: white;
+	border-radius: 20px;
+	padding: 5px;
+}
