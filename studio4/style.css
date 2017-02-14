@@ -3,49 +3,44 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
 }
+
 body {
-	line-height: 1;
+  line-height: 1;
 }
+
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
+
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
+
 
 /*End of Eric Meyer reset*/
 
@@ -105,13 +100,13 @@ div p {
   font-size: 40px;
   width: 110px;
   height: 70px;
-  padding-top:5px;
+  padding-top: 5px;
   cursor: pointer;
 }
 
 #reject {
   top: 0;
-	text-align: center;
+  text-align: center;
   padding-top: 100px;
   position: absolute;
   width: 1024px;
@@ -123,95 +118,95 @@ div p {
 
 #prompt {
   color: black;
-	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 }
 
 button {
-	margin-top: 50px;
-	width: 100px;
-	background-color: orange;
-	border-radius: 30px;
-	color: white;
-	display: block;
+  margin-top: 50px;
+  width: 100px;
+  background-color: orange;
+  border-radius: 30px;
+  color: white;
+  display: block;
 }
 
 #close {
-	margin: 40px auto;
-	text-align: center;
-	padding-bottom: 5px;
-	font-size: 20px;
+  margin: 40px auto;
+  text-align: center;
+  padding-bottom: 5px;
+  font-size: 20px;
 }
 
 #close:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 nav {
-	display: none;
-	position: absolute;
-	width: 1024px;
-	height: 1000px;
-	background-color: white;
-	top: 0;
+  display: none;
+  position: absolute;
+  width: 1024px;
+  height: 1000px;
+  background-color: white;
+  top: 0;
 }
 
 li {
-	display: list-item;
-	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-	font-size: 60px;
-	padding: 25px 0;
+  display: list-item;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-size: 60px;
+  padding: 25px 0;
 }
 
 .tip {
-	position: relative;
-	font-size: 25px;
-	background-color: orange;
-	color: white;
-	width: 150px;
-	padding: 10px;
-	border-radius: 30px;
-	opacity: 0;
+  position: relative;
+  font-size: 25px;
+  background-color: orange;
+  color: white;
+  width: 150px;
+  padding: 10px;
+  border-radius: 30px;
+  opacity: 0;
 }
 
 #crack, #break, #scramble, #cook {
-	position: absolute;
+  position: absolute;
 }
 
 #crack {
-	left:23%;
-	top: 7%;
+  left: 23%;
+  top: 7%;
 }
 
 #break {
-	right: 23%;
-	top:17%;
+  right: 23%;
+  top: 17%;
 }
 
 #scramble {
-	left: 23%;
-	top: 35%;
+  left: 23%;
+  top: 35%;
 }
 
 #cook {
-	right: 23%;
-	top: 40%;
+  right: 23%;
+  top: 40%;
 }
 
 img {
-	padding-left: 20px;
+  padding-left: 20px;
 }
 
 footer {
-	margin-top: 50px;
-	text-align: center;
-	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  margin-top: 50px;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 }
 
 footer a {
-	font-size: 16px;
-	text-decoration: none;
-	background-color: orange;
-	color: white;
-	border-radius: 20px;
-	padding: 5px;
+  font-size: 16px;
+  text-decoration: none;
+  background-color: orange;
+  color: white;
+  border-radius: 20px;
+  padding: 5px;
 }
