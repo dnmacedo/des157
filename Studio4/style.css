@@ -132,14 +132,71 @@ button {
 	background-color: orange;
 	border-radius: 30px;
 	color: white;
+	display: block;
 }
 
 #close {
+	margin: 40px auto;
 	text-align: center;
-	padding-bottom: 10px;
+	padding-bottom: 5px;
 	font-size: 20px;
 }
 
 #close:hover {
 	cursor: pointer;
+}
+
+nav {
+	display: none;
+	position: absolute;
+	width: 1024px;
+	height: 1000px;
+	background-color: white;
+	top: 0;
+}
+
+li {
+	display: list-item;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+	font-size: 60px;
+	padding: 25px 0;
+}
+
+.tip {
+	position: relative;
+	font-size: 25px;
+	background-color: orange;
+	color: white;
+	width: 150px;
+	padding: 10px;
+	border-radius: 30px;
+	opacity: 0;
+}
+
+#crack, #break, #scramble, #cook {
+	position: absolute;
+}
+
+#crack {
+	left:23%;
+	top: 7%;
+}
+
+#break {
+	right: 23%;
+	top:17%;
+}
+
+#scramble {
+	left: 23%;
+	top: 35%;
+}
+
+#cook {
+	right: 23%;
+	top: 40%;
+}
+
+img {
+	padding-left: 20px;
 }
