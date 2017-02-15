@@ -115,6 +115,12 @@ p {
 	width: 700px;
 }
 
+#proposal {
+	width: 900px;
+	column-count: 2;
+	column-gap: 30px;
+}
+
 img {
   padding-left: 40px;
   border: darkgrey;
