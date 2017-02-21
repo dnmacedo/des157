@@ -12,11 +12,11 @@ var wrongA = document.getElementById("wrongA");
 rightA.addEventListener("click", function(){
 
   for(var i = 0; i < 2; i++){
-    Velocity("rightA",
+    Velocity(rightA,
       { y: "+=200" }
     );
 
-    Velocity("rightA",
+    Velocity(rightA,
       "reverse"
     );
 
@@ -27,13 +27,13 @@ rightA.addEventListener("click", function(){
 
 wrongA.addEventListener("click", function(){
 
-    Velocity("wrongA",
+    Velocity(wrongA,
     { x: "+=100" });
-    Velocity("wrongA",
+    Velocity(wrongA,
     { x: "-=200" });
-    Velocity("wrongA",
+    Velocity(wrongA,
     "reverse");
-    console.log("rightA bounced");
+    console.log("wrongA bounced");
 
 
 });

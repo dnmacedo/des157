@@ -58,6 +58,10 @@ main {
   height: 600px;
 }
 
+.divs {
+  display: inline-block;
+}
+
 nav {
   width: 400px;
   float: right;
@@ -83,10 +87,23 @@ a:hover {
   transition: all .3s ease;
 }
 
+#question {
+  position: relative;
+  top: 100px;
+  text-align: center;
+}
+
 #rightA {
   position: relative;
   top: 300px;
   left: 75px;
+}
+
+#wrongA {
+  position: relative;
+  top: 300px;
+  left: 300px;
+
 }
 
 footer {
