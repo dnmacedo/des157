@@ -3,21 +3,22 @@
 document.addEventListener("DOMContentLoaded", function(event){
   console.log("DOM fully loaded and parsed");
 
-var q = document.getElementById("question");
-var rightA = document.getElementById("rightA");
-var wrongA = document.getElementById("wrongA");
+var q = document.getElementsByClassName("question");
+var rightA = document.getElementsByClassName("rightA");
+var wrongA = document.getElementsByClassName("wrongA");
+var x = 0;
 
-// function game(){
-  rightA.addEventListener("click", function(){
+function game(x){
+  rightA[x].addEventListener("click", function(){
 
     for(var i = 0; i < 2; i++){
-      Velocity(rightA,
+      Velocity(rightA[x],
         { top: "-=50",
       }, {
         duration: 150,
       });
 
-      Velocity(rightA,
+      Velocity(rightA[x],
         "reverse"
       );
 
@@ -28,57 +29,57 @@ var wrongA = document.getElementById("wrongA");
 
   });
 
-  wrongA.addEventListener("click", function(){
+  wrongA[x].addEventListener("click", function(){
 
-      Velocity(wrongA,
+      Velocity(wrongA[x],
         { left: "+=50",
       }, {
-        duration: 50}
+        duration: 100}
       );
 
-      Velocity(wrongA,
+      Velocity(wrongA[x],
         { left: "-=100",
       }, {
-        duration: 50}
+        duration: 100}
       );
 
-      Velocity(wrongA,
+      Velocity(wrongA[x],
       "reverse");
 
-      Velocity(wrongA,
+      Velocity(wrongA[x],
         { left: "-=50",
       }, {
-        duration: 50}
+        duration: 100}
       );
 
         console.log("wrongA bounced");
 
   });
 
-
+}
 
 function nextQ(){
-  Velocity(rightA,
+  Velocity(rightA[x],
     ("fadeOut"
   ), {delay: 350,
     duration: 350
   });
 
-  Velocity(wrongA,
+  Velocity(wrongA[x],
     ("fadeOut"
   ), {delay: 1000,
     duration: 350
   });
 
-  Velocity(q,
+  Velocity(q[x],
     ("fadeOut"
   ), {delay: 1000,
     duration: 350
   });
 
-  // x = x +1;
-  //
-  // game(x);
+  x = x +1;
+
+  game(x);
 }
 
 });
