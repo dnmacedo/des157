@@ -33,13 +33,13 @@ var wrongA = document.getElementById("wrongA");
       Velocity(wrongA,
         { left: "+=50",
       }, {
-        duration: 50}
+        duration: 75}
       );
 
       Velocity(wrongA,
         { left: "-=100",
       }, {
-        duration: 50}
+        duration: 75}
       );
 
       Velocity(wrongA,
@@ -48,7 +48,7 @@ var wrongA = document.getElementById("wrongA");
       Velocity(wrongA,
         { left: "-=50",
       }, {
-        duration: 50}
+        duration: 75}
       );
 
         console.log("wrongA bounced");

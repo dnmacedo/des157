@@ -45,12 +45,13 @@ table {
 /*end of Eric Meyer's reset*/
 
 body {
-  width: 1024px;
+  max-height: 900px;
   height: auto;
   background-image: url("images/studio5.png");
   background-repeat: no-repeat;
   background-position: top;
   background-color: rgb(35, 100, 100);
+  background-size: cover;
   margin: auto;
 }
 
@@ -63,20 +64,20 @@ main {
 }
 
 nav {
-  width: 400px;
+  width: 500px;
   float: right;
 }
 
 li {
   display: inline-block;
-  margin-top: 18px;
+  margin-top: 25px;
 }
 
 a {
   text-decoration: none;
   color: white;
   font-family: sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   padding: 20px;
   cursor: pointer;
 }
@@ -90,19 +91,19 @@ a:hover {
 #question {
   position: relative;
   top: 100px;
-  text-align: center;
+  margin-left: 25%;
 }
 
 #rightA {
   position: relative;
   top: 300px;
-  left: 75px;
+  left: 15%;
 }
 
 #wrongA {
   position: relative;
   top: 300px;
-  left: 300px;
+  left: 35%;
 
 }
 
@@ -111,7 +112,7 @@ footer {
   right: 0;
   left: 0;
   bottom: 0;
-  margin: auto;
+  margin: 170px auto 0 auto;
   max-width: 1024px;
   height: 40px;
 }
