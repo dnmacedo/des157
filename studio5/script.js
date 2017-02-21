@@ -13,8 +13,10 @@ rightA.addEventListener("click", function(){
 
   for(var i = 0; i < 2; i++){
     Velocity(rightA,
-      { y: "+=200" }
-    );
+      { top: "-=50",
+    }, {
+      duration: 150,
+    });
 
     Velocity(rightA,
       "reverse"
@@ -28,12 +30,27 @@ rightA.addEventListener("click", function(){
 wrongA.addEventListener("click", function(){
 
     Velocity(wrongA,
-    { x: "+=100" });
+      { left: "+=50",
+    }, {
+      duration: 100}
+    );
+
     Velocity(wrongA,
-    { x: "-=200" });
+      { left: "-=100",
+    }, {
+      duration: 100}
+    );
+
     Velocity(wrongA,
     "reverse");
-    console.log("wrongA bounced");
+
+    Velocity(wrongA,
+      { left: "-=50",
+    }, {
+      duration: 100}
+    );
+
+      console.log("wrongA bounced");
 
 
 });
