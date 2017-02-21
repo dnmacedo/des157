@@ -83,6 +83,12 @@ a:hover {
   transition: all .3s ease;
 }
 
+#rightA {
+  position: relative;
+  top: 300px;
+  left: 75px;
+}
+
 footer {
   position: relative;
   right: 0;
