@@ -58,11 +58,14 @@ header {
   padding: 15px 0;
   background-color: white;
 	width: 1024px;
+	position: fixed;
+	z-index: 100;
 }
 
 .wrapper {
 	width: 1024px;
 	margin: auto;
+	padding-top: 100px;
 	position: relative;
 }
 
@@ -86,6 +89,10 @@ h3 {
   font-size: 25px;
   padding: 10px;
   color: black;
+}
+
+h4 {
+
 }
 
 div h3 {
@@ -162,4 +169,8 @@ footer a {
   text-decoration: none;
   color: black;
   padding: 20px;
+}
+
+.shortcuts {
+	padding-top: 100px;
 }
