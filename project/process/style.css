@@ -78,6 +78,15 @@ h1 {
   font-weight: bold;
 }
 
+ul {
+	margin: 30px;
+}
+
+li {
+	font-size: 30px;
+	line-height: 50px;
+}
+
 header p {
   font-size: 24px;
   width: 400px;
