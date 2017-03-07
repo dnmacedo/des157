@@ -77,8 +77,8 @@ main {
 
 .pages {
   position: relative;
-  margin: 300px 0;
-  height: 600px;
+  padding: 300px 0;
+  height: 1200px;
 }
 
 a .left {
@@ -110,8 +110,11 @@ footer {
 }
 
 
-
 ul li {
   font-size: 70px;
   padding: 20px;
+}
+
+.backlinks {
+  font-size: 60px;
 }
