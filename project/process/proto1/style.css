@@ -72,11 +72,13 @@ a {
 }
 
 main {
-  margin-top: 200px;
+  margin: 0;
 }
 
 .pages {
-  height: 1200px;
+  position: relative;
+  margin: 300px 0;
+  height: 600px;
 }
 
 a .left {
@@ -106,6 +108,8 @@ footer {
 .i {
   margin-left: 850px;
 }
+
+
 
 ul li {
   font-size: 70px;
