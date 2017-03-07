@@ -58,6 +58,7 @@ body {
 header {
   padding: 100px;
   margin-top: 100px;
+
 }
 
 h1 {
@@ -72,7 +73,10 @@ a {
 
 main {
   margin-top: 200px;
+}
 
+.pages {
+  height: 1200px;
 }
 
 a .left {
@@ -101,4 +105,9 @@ footer {
 
 .i {
   margin-left: 850px;
+}
+
+ul li {
+  font-size: 70px;
+  padding: 20px;
 }
