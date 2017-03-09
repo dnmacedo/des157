@@ -3,118 +3,87 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
 }
+
 body {
-	line-height: 1;
+  line-height: 1;
 }
+
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
+
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
+
 
 /*end eric Meyer's reset*/
 
+
 /*begin body styles*/
 
+
+/*@font-face {
+  font-family: "proximanova";
+  font-weight: bold;
+  src: url("fontsPN/proximanovabold.otf") format("open type");
+}*/
+
 body {
-  font-family: sans-serif;
-}
-
-header {
-  padding: 100px;
-  margin-top: 100px;
-
-}
-
-h1 {
-  font-size: 70px;
-}
-
-a {
-  position: relative;
-  display: inline-block;
-  margin: 0;
+  max-width: 980px;
+  font-family: 'proximanova', sans-serif;
+  background-color: #E6D365;
 }
 
 main {
-  margin: 0;
+  margin: auto;
+  height: 1600px;
 }
 
-.pages {
-  position: relative;
-  padding: 300px 0;
-  height: 1200px;
-}
-
-a .left {
-  padding-left: 30px;
-
-}
-
-a .right {
-  right: 0;
-  padding-right: 30px;
-
-}
-
-a .gameIcon {
-  top: 100px;
-  padding: 20px;
-
-}
-
-footer {
-  position: fixed;
-  bottom: 0;
-  height: 150px;
-  width: 100%;
-}
-
-.i {
-  margin-left: 850px;
-}
-
-
-ul li {
+h1 {
+  text-align: left;
   font-size: 70px;
-  padding: 20px;
+  padding: 100px 150px 100px 50px;
 }
 
-.backlinks {
-  font-size: 60px;
+.gameIcon {
+  max-width: 350px;
+  display: block;
+}
+
+a:hover {
+  cursor: pointer;
+  background-color: blue;
+}
+
+#homepage a {
+  width: 350px;
+  height: 350px;
+  padding: 60px;
+  display: inline-block;
 }
