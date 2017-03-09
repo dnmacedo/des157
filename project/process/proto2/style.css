@@ -87,3 +87,14 @@ a:hover {
   padding: 60px;
   display: inline-block;
 }
+
+a .i {
+  max-width: 150px;
+  display: block;
+}
+
+#i {
+  width: 150px;
+  height: 150px;
+  display: block;
+}
