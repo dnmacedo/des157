@@ -65,7 +65,7 @@ body {
 
 main {
   margin: auto;
-  height: 3000px;
+  height: 5000px;
 }
 
 h1 {
@@ -76,11 +76,29 @@ h1 {
 
 h2 {
   text-align: left;
+  font-size: 80px;
   padding: 0 150px 100px 100px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+p {
+  font-size: 65px;
+  width: 850px;
+  margin: auto;
 }
 
 section {
   min-height: 400px;
+}
+
+.backlinks {
+  padding: 25px 0 200px 25px;
+  text-decoration: none;
+  color: black;
 }
 
 /*start specific styles*/
@@ -126,8 +144,42 @@ li {
   padding: 20px;
 }
 
-.backlinks {
-  padding-bottom: 200px;
-  text-decoration: none;
-  color: black;
+/*start read styles*/
+
+.gamesquares {
+  width: 100px;
+  height: 100px;
+  padding: 50px;
+  margin: 50px;
+  display: inline-block;
+  background-color: ivory;
+  text-align: center;
+  font-size: 80px;
+}
+
+.selectgame {
+  height: 1800px;
+}
+
+#stories h2 {
+  padding-top: 50px;
+}
+
+#next {
+  padding: 50px;
+  float: right;
+}
+
+#qs {
+  clear: both;
+  display: inline-block;
+  margin: auto;
+}
+
+#options li {
+  margin: 30px;
+  background-color: white;
+  border-style: solid;
+  border-radius: 30px;
+  border-color: blue;
 }
