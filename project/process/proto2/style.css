@@ -70,7 +70,17 @@ main {
 
 h1 {
   text-align: left;
-  padding: 100px 150px 100px 100px;
+  padding: 100px 150px 0 100px;
+  font-size: 100px;
+}
+
+h2 {
+  text-align: left;
+  padding: 0 150px 100px 100px;
+}
+
+section {
+  min-height: 400px;
 }
 
 /*start specific styles*/
@@ -98,13 +108,18 @@ h1 {
   width: 150px;
   height: 150px;
   padding: 0;
+  margin: 100px 0;
   display: block;
   float: right;
 }
 
 #info {
-  margin-top: 500px;
   padding-left: 100px;
+  height: 1300px;
+}
+
+ul {
+  margin-top: 200px;
 }
 
 li {
@@ -113,4 +128,6 @@ li {
 
 .backlinks {
   padding-bottom: 200px;
+  text-decoration: none;
+  color: black;
 }
