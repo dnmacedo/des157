@@ -54,41 +54,42 @@ table {
   src: url("fontsPN/proximanovabold.otf") format("open type");
 }*/
 
+/*start global styles*/
+
 body {
   max-width: 980px;
   font-family: 'proximanova', sans-serif;
   background-color: #E6D365;
+  font-size: 70px;
 }
 
 main {
   margin: auto;
-  height: 1600px;
+  height: 3000px;
 }
 
 h1 {
   text-align: left;
-  font-size: 70px;
-  padding: 100px 150px 100px 50px;
+  padding: 100px 150px 100px 100px;
 }
 
+/*start specific styles*/
+
+/*homepage styles*/
+
 .gameIcon {
-  max-width: 350px;
+  max-width: 400px;
   display: block;
 }
 
-a:hover {
-  cursor: pointer;
-  background-color: blue;
-}
-
 #homepage a {
-  width: 350px;
-  height: 350px;
-  padding: 60px;
+  width: 400px;
+  height: 400px;
+  padding: 40px;
   display: inline-block;
 }
 
-a .i {
+.i {
   max-width: 150px;
   display: block;
 }
@@ -96,5 +97,20 @@ a .i {
 #i {
   width: 150px;
   height: 150px;
+  padding: 0;
   display: block;
+  float: right;
+}
+
+#info {
+  margin-top: 500px;
+  padding-left: 100px;
+}
+
+li {
+  padding: 20px;
+}
+
+.backlinks {
+  padding-bottom: 200px;
 }
