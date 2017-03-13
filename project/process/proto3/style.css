@@ -68,6 +68,10 @@ main {
   height: 5000px;
 }
 
+.pages {
+  height: 1800px;
+}
+
 h1 {
   text-align: left;
   padding: 100px 150px 0 100px;
@@ -157,12 +161,9 @@ li {
   font-size: 80px;
 }
 
-.selectgame {
-  height: 1800px;
-}
 
-#stories h2 {
-  padding-top: 50px;
+#stories h2, #qs h3 {
+  padding: 50px;
 }
 
 #next {
@@ -174,6 +175,7 @@ li {
   clear: both;
   display: inline-block;
   margin: auto;
+  height: 1800px;
 }
 
 #options li {
@@ -182,4 +184,8 @@ li {
   border-style: solid;
   border-radius: 30px;
   border-color: blue;
+}
+
+#wronganswer {
+  
 }
