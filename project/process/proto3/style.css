@@ -1,0 +1,185 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/*end eric Meyer's reset*/
+
+
+/*begin body styles*/
+
+
+/*@font-face {
+  font-family: "proximanova";
+  font-weight: bold;
+  src: url("fontsPN/proximanovabold.otf") format("open type");
+}*/
+
+/*start global styles*/
+
+body {
+  max-width: 980px;
+  font-family: 'proximanova', sans-serif;
+  background-color: #E6D365;
+  font-size: 70px;
+}
+
+main {
+  margin: auto;
+  height: 5000px;
+}
+
+h1 {
+  text-align: left;
+  padding: 100px 150px 0 100px;
+  font-size: 100px;
+}
+
+h2 {
+  text-align: left;
+  font-size: 80px;
+  padding: 0 150px 100px 100px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+p {
+  font-size: 65px;
+  width: 850px;
+  margin: auto;
+}
+
+section {
+  min-height: 400px;
+}
+
+.backlinks {
+  padding: 25px 0 200px 25px;
+  text-decoration: none;
+  color: black;
+}
+
+/*start specific styles*/
+
+/*homepage styles*/
+
+.gameIcon {
+  max-width: 400px;
+  display: block;
+}
+
+#homepage a {
+  width: 400px;
+  height: 400px;
+  padding: 40px;
+  display: inline-block;
+}
+
+.i {
+  max-width: 150px;
+  display: block;
+}
+
+#i {
+  width: 150px;
+  height: 150px;
+  padding: 0;
+  margin: 100px 0;
+  display: block;
+  float: right;
+}
+
+#info {
+  padding-left: 100px;
+  height: 1300px;
+}
+
+ul {
+  margin-top: 200px;
+}
+
+li {
+  padding: 20px;
+}
+
+/*start read styles*/
+
+.gamesquares {
+  width: 100px;
+  height: 100px;
+  padding: 50px;
+  margin: 50px;
+  display: inline-block;
+  background-color: ivory;
+  text-align: center;
+  font-size: 80px;
+}
+
+.selectgame {
+  height: 1800px;
+}
+
+#stories h2 {
+  padding-top: 50px;
+}
+
+#next {
+  padding: 50px;
+  float: right;
+}
+
+#qs {
+  clear: both;
+  display: inline-block;
+  margin: auto;
+}
+
+#options li {
+  margin: 30px;
+  background-color: white;
+  border-style: solid;
+  border-radius: 30px;
+  border-color: blue;
+}
