@@ -195,3 +195,10 @@ li {
   margin: auto;
   text-align: center;
 }
+
+#wronganswer p {
+  font-size: 80px;
+  padding: 100px 0;
+  margin: 500px auto;
+  text-align: center;
+}
