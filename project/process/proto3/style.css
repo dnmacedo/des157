@@ -186,6 +186,12 @@ li {
   border-color: blue;
 }
 
-#wronganswer {
-  
+.thumbsup {
+  margin: auto;
+}
+
+.nextlinks {
+  display: block;
+  margin: auto;
+  text-align: center;
 }
