@@ -187,12 +187,20 @@ li {
 }
 
 .thumbsup {
-  margin: auto;
+  margin: 0 auto 200px auto;
+  display: block;
 }
 
 .nextlinks {
   display: block;
   margin: auto;
+  text-align: center;
+}
+
+#goodjob p {
+  font-size: 80px;
+  padding: 100px 0;
+  margin: 200px auto 100px auto;
   text-align: center;
 }
 
