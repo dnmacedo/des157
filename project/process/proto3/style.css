@@ -54,6 +54,7 @@ table {
   src: url("fontsPN/proximanovabold.otf") format("open type");
 }*/
 
+
 /*start global styles*/
 
 body {
@@ -105,7 +106,9 @@ section {
   color: black;
 }
 
+
 /*start specific styles*/
+
 
 /*homepage styles*/
 
@@ -138,6 +141,7 @@ section {
 #info {
   padding-left: 100px;
   height: 1300px;
+  display: none;
 }
 
 ul {
@@ -147,6 +151,7 @@ ul {
 li {
   padding: 20px;
 }
+
 
 /*start read styles*/
 
@@ -160,7 +165,6 @@ li {
   text-align: center;
   font-size: 80px;
 }
-
 
 #stories h2, #qs h3 {
   padding: 50px;
@@ -210,6 +214,7 @@ li {
   margin: 500px auto;
   text-align: center;
 }
+
 
 /*start listen.html styles*/
 
