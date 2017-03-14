@@ -19,9 +19,9 @@ var opt4 = document.getElementById("opt4");
 var next = document.getElementById("next");
 
 
-if (window.width >= 450) {
+
   alert("Please change the screen size to 'iPhone6' in the toggle device button to view this interface. (right click, inspect, phone/tablet symbol).");
-}
+
 
 // start read.html interactions
 
