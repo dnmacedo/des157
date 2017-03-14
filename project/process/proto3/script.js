@@ -29,7 +29,7 @@ story1.addEventListener("click", function(){
 
   storytitle.innerHTML = "Kabel starts the day...";
 
-  storyblurb.innerHTML = "Kabel is an aspiring actor. On his way to his audition for a big movie, he missed his bus! He thought, “No big deal, I’ve got plenty of time.” He decided to walk instead. Walking down the street he noticed a woman bent over picking up her belongings from the ground. John said hello and offered to help, but the woman said, “NO!” This was unexpected, but nonetheless, John happily continued walking. He saw a cat down an alley that soon followed him all the way to his destination.";
+  storyblurb.innerHTML = "Kabel is an aspiring actor. On his way to his audition for a big movie, he missed his bus! He thought, “No big deal, I’ve got plenty of time.” He decided to walk instead. Walking down the street he noticed a woman bent over picking up her belongings from the ground. Kabel said hello and offered to help, but the woman said, “NO!” This was unexpected, but nonetheless, Kabel happily continued walking. He saw a cat down an alley that soon followed him all the way to his destination.";
 
   question.innerHTML = "Where was Kabel going?";
 
