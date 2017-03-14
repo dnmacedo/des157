@@ -224,3 +224,22 @@ button {
   margin: 20px auto;
   padding: 10px;
 }
+
+.instructions {
+  height: 1800px;
+}
+
+#instruction p {
+  width: 700px;
+  margin: 200px auto;
+  text-align: center;
+}
+
+.choice {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  display: inline-block;
+  margin: 130px;
+  background-color: white;
+}

@@ -18,10 +18,36 @@ var opt3 = document.getElementById("opt3");
 var opt4 = document.getElementById("opt4");
 var next = document.getElementById("next");
 
+var ba = new Audio("audio/ba.mp3");
+var cha = new Audio("audio/cha.mp3");
+var da = new Audio("audio/da.mp3");
+var fa = new Audio("audio/fa.mp3");
+var ga = new Audio("audio/ga.mp3");
+var ha = new Audio("audio/ha.mp3");
+var ja = new Audio("audio/ja.mp3");
+var ka = new Audio("audio/ka.mp3");
+var la = new Audio("audio/la.mp3");
+var ma = new Audio("audio/ma.mp3");
+var na = new Audio("audio/na.mp3");
+var pa = new Audio("audio/pa.mp3");
+var qua = new Audio("audio/qua.mp3");
+var ra = new Audio("audio/ra.mp3");
+var sa = new Audio("audio/sa.mp3");
+var sha = new Audio("audio/sha.mp3");
+var ta = new Audio("audio/ta.mp3");
+var tha = new Audio("audio/tha.mp3");
+var va = new Audio("audio/va.mp3");
+var wa = new Audio("audio/wa.mp3");
+var ya = new Audio("audio/ya.mp3");
+var za = new Audio("audio/za.mp3");
+
+var library = ["ba, cha, da, fa, ga, ha, ja, ka, la, ma, na, pa, qua, ra, sa, sha, ta, tha, va, wa, ya, za"];
 
 
+
+if(window.width >=450){
   alert("Please change the screen size to 'iPhone6' in the toggle device button to view this interface. (right click, inspect, phone/tablet symbol).");
-
+}
 
 // start read.html interactions
 

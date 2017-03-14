@@ -23,7 +23,7 @@
 
       <h1>Is your volume up?</h1>
 
-      <img src="volume.svg" alt="a speaker with sound" style="margin:auto;display:block;">
+      <img src="volume.svg" alt="a speaker with sound" style="margin:auto;display:block;" width="350">
 
       <button><a href="#instruction">Start</a></button>
 
@@ -33,15 +33,36 @@
 
     <section name="library" class="pages">
 
+      <button><audio>
+        <source src"audio/ga.mp3" type="audio/mp3">
+        </audio>"ga"</button>
+
     </section>
 
-    <section name="instruction"class="pages">
+    <section  class="pages" class="instructions" id="instruction">
 
       <a class="backlinks" href="https://dnmacedo.github.io/des157/project/process/proto3/listen.html"><img class="left" src="leftarrow.svg" alt="left arrow" width="50">Back</a>
 
-      <p>Match as many phonemes (spelt out sound) with the voice you hear in 1 minute.</p>
+      <p>Match as many phonemes <br>(spelt out sounds) <br>with the voice you hear in 1 minute.</p>
 
       <button><a href="#game">Go!</a></button>
+
+    </section>
+
+    <!-- start game -->
+
+    <section id="game" class="pages">
+
+      <a class="backlinks" href="https://dnmacedo.github.io/des157/project/process/proto3/listen.html"><img class="left" src="leftarrow.svg" alt="left arrow" width="50">Back</a>
+
+      <h2>Press the picture for the sound.</h2>
+
+      <img id="playsound" src="volume.svg" alt="a speaker with sound" style="margin:auto;display:block;" width="350">
+
+
+      <button class="choice">"ga"</button>
+
+      <button class="choice">"ka"</button>
 
     </section>
 
