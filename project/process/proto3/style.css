@@ -210,3 +210,17 @@ li {
   margin: 500px auto;
   text-align: center;
 }
+
+/*start listen.html styles*/
+
+button {
+  background-color: transparent;
+  border-radius: 30px;
+  border-color: black;
+  border-width: thick;
+  width: 400px;
+  font-size: 70px;
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+}

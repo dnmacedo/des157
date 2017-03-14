@@ -16,6 +16,7 @@ var opt1 = document.getElementById("opt1");
 var opt2 = document.getElementById("opt2");
 var opt3 = document.getElementById("opt3");
 var opt4 = document.getElementById("opt4");
+var next = document.getElementById("next");
 
 
 if (window.width >= 450) {
@@ -75,6 +76,8 @@ story4.addEventListener("click", function(){
 
   storyblurb.innerHTML = "More stories coming soon!";
 
+  next.style.display = "none";
+
 });
 
 story5.addEventListener("click", function(){
@@ -82,6 +85,8 @@ story5.addEventListener("click", function(){
   storytitle.innerHTML = " ";
 
   storyblurb.innerHTML = "More stories coming soon!";
+
+  next.style.display = "none";
 
 });
 
@@ -91,8 +96,16 @@ story6.addEventListener("click", function(){
 
   storyblurb.innerHTML = "More stories coming soon!";
 
+  next.style.display = "none";
+
 
 });
+
+// end read.html commands
+
+// start listen.html commands
+
+
 
 
 
