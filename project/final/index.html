@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Prototype 3</title>
+  <title>Final project</title>
   <link href="style.css" rel="stylesheet">
   <script src="script.js"></script>
 
@@ -15,6 +15,8 @@
   <!-- I would like to do a quick intro here, like submit a name and level before the interface opens -->
   <section id="login">
 
+    
+
   </section>
 
   <section id="choose level">
@@ -23,25 +25,25 @@
 
     <main>
 
-      <h1>hello!</h1>
+      <h1 id="greeting"></h1>
       <br>
       <h2>What do you want to work on today?</h2>
 
-          <img class="gameIcon" id="readIcon" src="read.svg" alt="an open eye with background text">
+          <a id="readIcon"><img class="gameIcon" src="read.svg" alt="an open eye with background text"></a>
 
-          <img class="gameIcon" id="speakIcon" src="speak.svg" alt="a mouth talking">
+          <a id="speakIcon"><img class="gameIcon" src="speak.svg" alt="a mouth talking"></a>
 
-          <img class="gameIcon" id="listenIcon" src="listen.svg" alt="a listening ear">
+          <a id="listenIcon"><img class="gameIcon" src="listen.svg" alt="a listening ear"></a>
 
-          <img class="gameIcon" id="writeIcon" src="write.svg" alt="a hand writing">
+          <a id="writeIcon"><img class="gameIcon" src="write.svg" alt="a hand writing"></a>
 
-          <img class="i" src="i.svg" alt="information icon">
+          <a id="i"><img src="i.svg" alt="information icon"></a>
 
     </main>
 
     <section id="information">
 
-      <a class="backlinks" href="https://dnmacedo.github.io/des157/project/process/proto3/index.html"><img class="left" src="leftarrow.svg" alt="left arrow" width="50">Home</a>
+      <a class="exitlinks" href="#"><img class="left" src="leftarrow.svg" alt="left arrow" width="50">Home</a>
 
       <ul>
         <li>Name</li>
@@ -52,6 +54,164 @@
       </ul>
 
     </section>
+
+    <!-- The reading games -->
+
+<section id="read">
+
+    <section class="pages">
+
+      <a class="exitlinks" href="#"><img class="left" src="leftarrow.svg" alt="left arrow" width="50">Home</a>
+
+      <h2>Read a short story and answer the question afterward.</h2>
+
+      <button><a class="start" href="#">Start</a></button>
+
+    </section>
+
+    <section id="pickStory" class="pages">
+
+      <h1>Pick a story</h1>
+      <br>
+
+      <a class="gamesquares" id="story1" href="#story">1</a>
+      <a class="gamesquares" id="story2" href="#story">2</a>
+      <a class="gamesquares" id="story3" href="#story">3</a>
+      <a class="gamesquares" id="story4" href="#story">4</a>
+      <a class="gamesquares" id="story5" href="#story">5</a>
+      <a class="gamesquares" id="story6" href="#story">6</a>
+
+    </section>
+
+  <section id="story" class="pages">
+
+    <a class="backlinks" href="#"><img class="left" src="leftarrow.svg" alt="left arrow" width="50">Back</a>
+
+    <h2 id="storytitle"></h2>
+
+    <p id="storyblurb"></p>
+
+      <button><a class="nextlinks" href="#">Next<img src="rightarrow.svg" alt="right arrow" width="50px"></a></button>
+
+  </section>
+
+  <section id="qs" class="pages">
+
+    <h3 id="question"></h3>
+
+    <ul id="options">
+      <li><a id="opt1" href="#"></a></li>
+      <li><a id="opt2" href="#"></a></li>
+      <li><a id="opt3" href="#"></a></li>
+      <li><a id="opt4" href="#"></a></li>
+    </ul>
+
+  </section>
+
+
+  <section id="goodjob" class="pages">
+
+    <a class="exitlinks" href="#gamesquares"><img class="left" src="leftarrow.svg" alt="left arrow" width="50">Exit game</a>
+
+    <p>Nice job!</p>
+
+    <img class="thumbsup" src="goodjob.svg" alt="hand with thumb sticking up" width="350">
+    <button><a class="tryagain" href="#story"><img class="right" src="rightarrow.svg" alt="left arrow" width="50">Try Again</a></button>
+
+    <button><a class="nextlinks" href="#gamesquares"><img class="right" src="rightarrow.svg" alt="left arrow" width="50">Next story</a></button>
+
+  </section>
+
+  <section id="wronganswer" class="pages">
+
+    <a class="exitlinks" href="#gamesquares"><img class="left" src="leftarrow.svg" alt="left arrow" width="50">Exit game</a>
+
+
+    <p>Womp womp. That's not right!</p>
+
+    <button><a class="tryagain" href="#questions"><img class="left" src="leftarrow.svg" alt="left arrow" width="50">Try Again</a></button>
+
+
+  </section>
+
+</section>
+
+
+    <!-- The listening games -->
+
+<section id="listen">
+
+  <section id="listenHome"class="pages">
+
+    <a class="exitlinks" href="#"><img class="left" src="leftarrow.svg" alt="left arrow" width="50">Home</a>
+
+
+    <h2>Is your volume up?</h2>
+
+    <img src="volume.svg" alt="a speaker with sound" style="margin:auto;display:block;" width="350">
+
+    <button><a class="start" href="#">Start</a></button>
+
+    <button><a id="library"href="#">Library</a></button>
+
+  </section>
+
+  <section name="soundLibrary" class="pages">
+
+    <button><audio>
+      <source src"audio/ga.mp3" type="audio/mp3">
+      </audio>"ga"</button>
+
+  </section>
+
+  <section  class="pages" id="instruction">
+
+    <a class="backlinks" href="#"><img class="left" src="leftarrow.svg" alt="left arrow" width="50">Back</a>
+
+    <p></p>
+
+    <button><a class="go" href="#">Go!</a></button>
+
+  </section>
+
+  <!-- start game -->
+
+  <section id="listenGame1" class="pages">
+
+    <a class="backlinks" href="#"><img class="left" src="leftarrow.svg" alt="left arrow" width="50">Back</a>
+
+    <h2>What's that sound?</h2>
+
+    <img class="playsound" src="volume.svg" alt="a speaker with sound" style="margin:auto;display:block;" width="350">
+
+
+    <button><a class="rightChoice" href="#">"ga"</a></button>
+
+    <button><a class="wrongChoice">"ka"</a></button>
+
+  </section>
+
+  </section>
+
+  <section id="goodjob" class="pages">
+
+    <a class="exitlinks" href="#"><img class="left" src="leftarrow.svg" alt="left arrow" width="50">Exit game</a>
+
+    <p>Nice job!</p>
+
+    <img class="thumbsup" src="goodjob.svg" alt="hand with thumb sticking up" width="350">
+    <button><a class="tryagain" href="#story"><img class="right" src="rightarrow.svg" alt="right arrow" width="50">Try Again</a></button>
+
+    <button><a class="nextlinks" href="#"><img class="right" src="rightarrow.svg" alt="left arrow" width="50">Next</a></button>
+
+  </section>
+
+</section>
+
+
+    <!-- The speaking games -->
+
+    <!-- The writing games -->
 
 
 </body>
