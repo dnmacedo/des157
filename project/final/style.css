@@ -49,7 +49,10 @@ table {
 
 .pages {
   margin: auto;
-  font-family: 
+  font-family: 'Chewy', cursive;
+  font-family: 'Caveat Brush', cursive;
+  font-family: 'Chelsea Market', cursive;
+  font-family: 'Itim', cursive;
 }
 
 #login {
