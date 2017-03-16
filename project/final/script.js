@@ -51,6 +51,34 @@ if(window.width >=450){
 
 // login function
 
+console.log('reading');
+
+//capture the submit event
+  document.f.onsubmit = processForm;
+
+function processForm() {
+
+    //store user name in a variable
+    var userName = document.f.userName.value;
+
+    //store myMsg in a variable called myMsg
+
+    var greeting = document.getElementById("greeting");
+
+    //error detection
+    if(userName==""){
+
+      alert('Give a name, any name!');
+    }
+
+
+    //use innerHTML to concatenate a message and put it on the screen
+    greeting.innerHTML='Hello, ' + userName + ', what would you like to work on today?';
+     //prevent page from reloading
+    return false;
+
+  }
+
 // pick level function
 
 // start read.html interactions

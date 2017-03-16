@@ -16,6 +16,17 @@
   <!-- I would like to do a quick intro here, like submit a name and level before the interface opens -->
   <section id="login" style="display:none;">
 
+    <form name="f">
+
+      <div>
+        <label>name</label>
+        <input type="text" name="userName">
+      </div>
+
+      <input type="submit" value="submit" />
+
+    </form>
+
   </section>
 
   <section id="chooseLevel" style="display:none;">
@@ -58,13 +69,13 @@
 
 <section id="read">
 
-    <section class="instruction" class="pages">
+    <section class="instruction" class="pages" style="display:none">
 
       <a class="exitlinks" href="#"><img class="left" src="leftarrow.svg" alt="left arrow" width="50">Home</a>
 
       <h2>Read a short story and answer the question afterward.</h2>
 
-      <button><a class="start" href="#">Start</a></button>
+      <button class="start">Start</button>
 
     </section>
 
@@ -90,7 +101,7 @@
 
     <p id="storyblurb"></p>
 
-      <button><a class="nextlinks" href="#">Next<img src="rightarrow.svg" alt="right arrow" width="50px"></a></button>
+      <button class="nextlinks">Next<img src="rightarrow.svg" alt="right arrow" width="50"></button>
 
   </section>
 
@@ -115,7 +126,7 @@
     <p>Nice job!</p>
 
     <img class="thumbsup" src="goodjob.svg" alt="hand with thumb sticking up" width="350">
-    <button><a class="tryagain" href="#story"><img class="right" src="rightarrow.svg" alt="left arrow" width="50">Try Again</a></button>
+    <button class="tryagain"><img class="right" src="rightarrow.svg" alt="left arrow" width="50">Try Again</button>
 
     <button><a class="nextlinks" href="#gamesquares"><img class="right" src="rightarrow.svg" alt="left arrow" width="50">Next story</a></button>
 
@@ -128,7 +139,7 @@
 
     <p>Womp womp. That's not right!</p>
 
-    <button><a class="tryagain" href="#questions"><img class="left" src="leftarrow.svg" alt="left arrow" width="50">Try Again</a></button>
+    <button class="tryagain"><img class="left" src="leftarrow.svg" alt="left arrow" width="50">Try Again</button>
 
 
   </section>
@@ -140,7 +151,7 @@
 
 <section id="listen">
 
-  <section id="listenHome"class="pages" style="display:none;">
+  <section id="listenHome" class="pages" style="display:none;">
 
     <a class="exitlinks" href="#"><img class="left" src="leftarrow.svg" alt="left arrow" width="50">Home</a>
 
@@ -149,16 +160,16 @@
 
     <img src="volume.svg" alt="a speaker with sound" style="margin:auto;display:block;" width="350">
 
-    <button><a class="start" href="#">Start</a></button>
+    <button class="start">Start</button>
 
-    <button><a id="library"href="#">Library</a></button>
+    <button id="library">Library</button>
 
   </section>
 
   <section id="soundLibrary" class="pages" style="display:none;">
 
     <button><audio>
-      <source src"audio/ga.mp3" type="audio/mp3">
+      <source src="audio/ga.mp3" type="audio/mp3"/>
       </audio>"ga"</button>
 
   </section>
@@ -169,7 +180,7 @@
 
     <p></p>
 
-    <button><a class="go" href="#">Go!</a></button>
+    <button class="go">Go!</button>
 
   </section>
 
@@ -184,13 +195,12 @@
     <img class="playsound" src="volume.svg" alt="a speaker with sound" style="margin:auto;display:block;" width="350">
 
 
-    <button><a class="rightChoice" href="#">"ga"</a></button>
+    <button class="rightChoice">"ga"</button>
 
-    <button><a class="wrongChoice">"ka"</a></button>
-
-  </section>
+    <button class="wrongChoice">"ka"</button>
 
   </section>
+
 
   <section class="goodjob" class="pages" style="display:none;">
 
@@ -199,9 +209,9 @@
     <p>Nice job!</p>
 
     <img class="thumbsup" src="goodjob.svg" alt="hand with thumb sticking up" width="350">
-    <button><a class="tryagain" href="#story"><img class="right" src="rightarrow.svg" alt="right arrow" width="50">Try Again</a></button>
+    <button class="tryagain"><img class="right" src="rightarrow.svg" alt="right arrow" width="50">Try Again</button>
 
-    <button><a class="nextlinks" href="#"><img class="right" src="rightarrow.svg" alt="left arrow" width="50">Next</a></button>
+    <button class="nextlinks"><img class="right" src="rightarrow.svg" alt="left arrow" width="50">Next</button>
 
   </section>
 
@@ -210,7 +220,19 @@
 
     <!-- The speaking games -->
 
+  <section id="speak" style="display:none;">
+
+    <p>More games coming soon!</p>
+
+  </section>
+
     <!-- The writing games -->
+
+    <section id="write" style="display:none;">
+
+      <p>More games coming soon!</p>
+
+    </section>
 
 
 </body>

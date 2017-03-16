@@ -55,58 +55,34 @@ table {
   font-family: 'Itim', cursive;
 }
 
-#login {
+#login {}
 
-}
+#chooseLevel {}
 
-#chooseLevel {
+main {}
 
-}
+#information {}
 
-main {
+#readHome {}
 
-}
+#story {}
 
-#information {
+#qs {}
 
-}
+.goodjob {}
 
-#readHome {
+.wronganswer {}
 
-}
+#listenHome {}
 
-#story {
+#soundLibrary {}
 
-}
+.instruction {}
 
-#qs {
+.listenGame {}
 
-}
-
-.goodjob {
-
-}
-
-.wronganswer {
-
-}
-
-#listenHome {
-
-}
-
-#soundLibrary {
-
-}
-
-.instruction {
-
-}
-
-.listenGame {
-
-}
 
 /*end of body styles for individual pages*/
+
 
 /*start styles for specifics*/
