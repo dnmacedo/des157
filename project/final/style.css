@@ -45,4 +45,65 @@ table {
 /*end eric Meyer's reset*/
 
 
-/*begin body styles*/
+/*begin body styles for individual pages*/
+
+.pages {
+  margin: auto;
+  font-family: 
+}
+
+#login {
+
+}
+
+#chooseLevel {
+
+}
+
+main {
+
+}
+
+#information {
+
+}
+
+#readHome {
+
+}
+
+#story {
+
+}
+
+#qs {
+
+}
+
+.goodjob {
+
+}
+
+.wronganswer {
+
+}
+
+#listenHome {
+
+}
+
+#soundLibrary {
+
+}
+
+.instruction {
+
+}
+
+.listenGame {
+
+}
+
+/*end of body styles for individual pages*/
+
+/*start styles for specifics*/
