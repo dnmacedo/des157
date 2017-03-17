@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function(event){
 var intro = document.getElementById("intro");
 var introGo = document.getElementById("introGo");
 var login = document.getElementById("login");
+var homepage = document.getElementById("homepage");
 
 intro.style.display="block";
 
@@ -80,7 +81,8 @@ function processLogin() {
     //error detection
     if(userName==""){
 
-      alert('Give a name, any name!');
+      document.getElementById("msg").innerHTML = "Give a name, any name!";
+      return false;
     }
 
     greeting.innerHTML='Hello, ' + userName + ', what would you like to work on today?';
@@ -91,7 +93,7 @@ function processLogin() {
     chooseLevel.style.display= "block";
 
      //prevent page from reloading
-    return false;
+     return false;
 
   }
 
@@ -104,25 +106,31 @@ function processLogin() {
 
   function processLevel() {
 
-      //store user name in a variable
-      var level = document.pickLevel.level.value;
+    var level = "";
+    var length = document.pickLevel.level.length;
 
-      //store myMsg in a variable called myMsg
+          //error detection
 
-      var levelStatus = document.getElementById("levelStatus");
-
-      //error detection
-      if(level==""){
-
-        alert('Pick one for now, you can always change it later.');
+    for(var i = 0; i<length; i++) {
+      if(document.pickLevel.level[i].checked) {
+        level = document.pickLevel.level[i].value;
+        break;
       }
+    }
 
-        console.log("You are on " + level + "!");
-
-       //prevent page from reloading
+    if(level =="") {
+      document.getElementById("msg").innerHTML = "Pick a level for now, you can change this later";
       return false;
+    } else {
+      console.log("You are on " + level + "!");
 
+      chooseLevel.style.display= "none";
+      homepage.style.display= "block";
 
+      return false;
+    }
+
+      // var levelStatus = document.getElementById("levelStatus");
 
     }
 
