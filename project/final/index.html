@@ -14,22 +14,48 @@
 <body>
 
   <!-- I would like to do a quick intro here, like submit a name and level before the interface opens -->
-  <section id="login" style="display:none;">
 
-    <form name="f">
+  <section id="intro" class="pages" style="display:none;">
+    <p>Welcome-- you're about to embark on a journey! <br> <br>In this interface you will build a beautiful
+      friendship with the English language.
+    <br> <br> <br>Are you ready?</p>
+
+    <button id="introGo">Go</button>
+
+  </section>
+
+  <section id="login" class="pages" style="display:none;">
+
+    <p>What is your name?<br><br><br></p>
+
+    <form name="login">
 
       <div>
-        <label>name</label>
-        <input type="text" name="userName">
+        <!-- <label>name</label> -->
+        <input type="text" name="userName" placeholder="Enter Name">
       </div>
 
-      <input type="submit" value="submit" />
+      <input type="submit" value="Next" />
 
     </form>
 
   </section>
 
-  <section id="chooseLevel" style="display:none;">
+  <section id="chooseLevel" style="display:none;" class="pages">
+
+    <p>Choose a level <br><br></p>
+
+    <form name="pickLevel">
+
+      <div>
+
+        <input type="radio" name="level" value="Lv1">Level 1
+
+      </div>
+
+      <input type="submit" value="Go" />
+
+    </form>
 
   </section>
 
@@ -39,13 +65,16 @@
       <br>
       <h2>What do you want to work on today?</h2>
 
-          <a id="readIcon"><img class="gameIcon" src="read.svg" alt="an open eye with background text"></a>
+          <a id="readIcon" class="gameIcon"><img src="read.svg" alt="an open eye with background text"></a>
 
-          <a id="speakIcon"><img class="gameIcon" src="speak.svg" alt="a mouth talking"></a>
+          <a id="speakIcon" class="gameIcon"><img src="speak.svg" alt="a mouth talking"></a>
 
-          <a id="listenIcon"><img class="gameIcon" src="listen.svg" alt="a listening ear"></a>
+          <a id="listenIcon" class="gameIcon"><img src="listen.svg" alt="a listening ear"></a>
 
-          <a id="writeIcon"><img class="gameIcon" src="write.svg" alt="a hand writing"></a>
+          <a id="writeIcon" class="gameIcon"><img src="write.svg" alt="a hand writing"></a>
+
+          <a href="#">Valid HTML5</a>
+          <a href="#">Valid CSS</a>
 
           <a id="i"><img src="i.svg" alt="information icon"></a>
 

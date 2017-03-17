@@ -1,6 +1,12 @@
 document.addEventListener("DOMContentLoaded", function(event){
   console.log("DOM fully loaded and parsed");
 
+var intro = document.getElementById("intro");
+var introGo = document.getElementById("introGo");
+var login = document.getElementById("login");
+
+intro.style.display="block";
+
 var myMsg = document.getElementById("myMsg");
 var story1 = document.getElementById("story1");
 var story2 = document.getElementById("story2");
@@ -49,19 +55,25 @@ if(window.width >=450){
   alert("Please change the screen size to 'iPhone6' in the toggle device button to view this interface. (right click, inspect, phone/tablet symbol).");
 }
 
+// introduction
+
+introGo.addEventListener("click", function(){
+  intro.style.display= "none";
+  login.style.display= "block";
+
+});
+
 // login function
 
 console.log('reading');
 
 //capture the submit event
-  document.f.onsubmit = processForm;
+  document.login.onsubmit = processLogin;
 
-function processForm() {
+function processLogin() {
 
     //store user name in a variable
-    var userName = document.f.userName.value;
-
-    //store myMsg in a variable called myMsg
+    var userName = document.login.userName.value;
 
     var greeting = document.getElementById("greeting");
 
@@ -71,13 +83,48 @@ function processForm() {
       alert('Give a name, any name!');
     }
 
-
-    //use innerHTML to concatenate a message and put it on the screen
     greeting.innerHTML='Hello, ' + userName + ', what would you like to work on today?';
+
+    console.log("Your name is " + userName);
+
+    login.style.display= "none";
+    chooseLevel.style.display= "block";
+
      //prevent page from reloading
     return false;
 
   }
+
+
+
+  console.log('reading');
+
+  //capture the submit event
+    document.pickLevel.onsubmit = processLevel;
+
+  function processLevel() {
+
+      //store user name in a variable
+      var level = document.pickLevel.level.value;
+
+      //store myMsg in a variable called myMsg
+
+      var levelStatus = document.getElementById("levelStatus");
+
+      //error detection
+      if(level==""){
+
+        alert('Pick one for now, you can always change it later.');
+      }
+
+        console.log("You are on " + level + "!");
+
+       //prevent page from reloading
+      return false;
+
+
+
+    }
 
 // pick level function
 

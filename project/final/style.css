@@ -47,15 +47,64 @@ table {
 
 /*begin body styles for individual pages*/
 
+body {
+  background-color:  #E6D365;
+  background-size: cover;
+}
+
 .pages {
+  width: 100%;
+  height: auto;
+  position: absolute;
   margin: auto;
-  font-family: 'Chewy', cursive;
+  background-color: #E6D365;
+  font-size: 70px;
+  /*font-family: 'Chewy', cursive;
   font-family: 'Caveat Brush', cursive;
-  font-family: 'Chelsea Market', cursive;
+  font-family: 'Chelsea Market', cursive;*/
   font-family: 'Itim', cursive;
 }
 
-#login {}
+.pages p {
+  text-align: center;
+  padding: 300px 100px 100px 100px;
+  font-family: 'Itim', cursive;
+}
+
+.pages button, .pages input {
+  display: block;
+  font-family: 'Itim', cursive;
+  font-size: 80px;
+  min-width: 300px;
+  max-width: 700px;
+  text-align: center;
+  margin: 25px auto;
+  padding:20px;
+  position: relative;
+  background-color: white;
+  border-radius: 40px;
+  border-color: transparent;
+}
+
+
+/*.pages input {
+  display: block;
+  font-size: 70px;
+  font-family:  'Itim', cursive;
+  border-radius: 40px;
+  padding: 20px;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 700px;
+}*/
+
+#intro {
+
+}
+
+#login {
+
+}
 
 #chooseLevel {}
 
