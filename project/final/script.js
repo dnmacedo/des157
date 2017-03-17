@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function(event){
 var intro = document.getElementById("intro");
 var introGo = document.getElementById("introGo");
 var login = document.getElementById("login");
+var chooseLevel = document.getElementById("chooseLevel");
 var homepage = document.getElementById("homepage");
 
 intro.style.display="block";
@@ -98,6 +99,8 @@ function processLogin() {
   }
 
 
+  // pick level function
+
 
   console.log('reading');
 
@@ -108,10 +111,10 @@ function processLogin() {
 
     var level = "";
     var length = document.pickLevel.level.length;
-
+    var i;
           //error detection
 
-    for(var i = 0; i<length; i++) {
+    for(i = 0; i<length; i++) {
       if(document.pickLevel.level[i].checked) {
         level = document.pickLevel.level[i].value;
         break;
@@ -119,24 +122,22 @@ function processLogin() {
     }
 
     if(level =="") {
-      document.getElementById("msg").innerHTML = "Pick a level for now, you can change this later";
+      document.getElementById("msg2").innerHTML = "Pick a level for now, you can change this later";
       return false;
-    } else {
+    }
+    
+      // var levelStatus = document.getElementById("levelStatus");
+
       console.log("You are on " + level + "!");
 
       chooseLevel.style.display= "none";
       homepage.style.display= "block";
 
       return false;
-    }
-
-      // var levelStatus = document.getElementById("levelStatus");
 
     }
 
-// pick level function
-
-// start read.html interactions
+// start read interactions
 
 story1.addEventListener("click", function(){
 
