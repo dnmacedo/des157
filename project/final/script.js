@@ -8,7 +8,8 @@ var chooseLevel = document.getElementById("chooseLevel");
 var levelGo = document.getElementById("levelGo");
 var homepage = document.getElementById("homepage");
 
-intro.style.display="block";
+// intro.style.display="block";
+homepage.style.display="block";
 
 var myMsg = document.getElementById("myMsg");
 var story1 = document.getElementById("story1");
@@ -119,7 +120,7 @@ for(var i=0; i< level.length; i++){
 
     levelDropdown.className = "dropdownSelect";
 
-  })
+  });
 }
 
       // var levelStatus = document.getElementById("levelStatus");

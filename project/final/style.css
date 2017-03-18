@@ -108,6 +108,8 @@ body {
 
 #chooseLevel {}
 
+  /*dropdown styles*/
+
 .dropdown {
   display: inline-block;
   position: relative;
@@ -136,7 +138,32 @@ body {
   display: block;
 }
 
-main {}
+/*end dropdown styles*/
+
+/*start homepage style*/
+
+main a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  padding: 100px;
+}
+
+.gameIcon {
+  display: inline-block;
+  padding: 55px;
+  position: relative;
+  max-width: 350px;
+}
+
+#i {
+  max-width: 150px;
+  position: relative;
+  float: right;
+  bottom: 0;
+}
 
 #information {}
 
