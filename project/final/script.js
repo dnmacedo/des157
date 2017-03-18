@@ -5,6 +5,7 @@ var intro = document.getElementById("intro");
 var introGo = document.getElementById("introGo");
 var login = document.getElementById("login");
 var chooseLevel = document.getElementById("chooseLevel");
+var levelGo = document.getElementById("levelGo");
 var homepage = document.getElementById("homepage");
 
 intro.style.display="block";
@@ -100,42 +101,38 @@ function processLogin() {
 
 
   // pick level function
+var dropbutton = document.getElementById("dropbutton");
+var levelDropdown = document.getElementById("levelDropdown");
 
+dropbutton.addEventListener("click", function(){
+    levelDropdown.classList.toggle("show");
+  });
 
-  console.log('reading');
+var Lv1 = document.getElementById("Lv1");
+var Lv2 = document.getElementById("Lv2");
+var Lv3 = document.getElementById("Lv3");
+var level = document.querySelectorAll("a");
 
-  //capture the submit event
-    document.pickLevel.onsubmit = processLevel;
+for(var i=0; i< level.length; i++){
+  level[i].addEventListener("click", function(){
+    dropbutton.innerHTML = this.innerHTML;
 
-  function processLevel() {
+    levelDropdown.className = "dropdownSelect";
 
-    var level = "";
-    var length = document.pickLevel.level.length;
-    var i;
-          //error detection
+  })
+}
 
-    for(i = 0; i<length; i++) {
-      if(document.pickLevel.level[i].checked) {
-        level = document.pickLevel.level[i].value;
-        break;
-      }
-    }
-
-    if(level =="") {
-      document.getElementById("msg2").innerHTML = "Pick a level for now, you can change this later";
-      return false;
-    }
-    
       // var levelStatus = document.getElementById("levelStatus");
+levelGo.addEventListener("click", function(){
 
       console.log("You are on " + level + "!");
 
       chooseLevel.style.display= "none";
       homepage.style.display= "block";
 
-      return false;
+      // return false;
 
-    }
+    });
 
 // start read interactions
 

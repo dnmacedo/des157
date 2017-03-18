@@ -36,7 +36,7 @@
         <input type="text" name="userName" placeholder="Enter Name">
       </div>
 
-      <input type="submit" value="Next" />
+      <input type="submit" value="Next">
 
     </form>
 
@@ -48,17 +48,16 @@
 
     <p>Choose a level <br><br></p>
 
-    <form name="pickLevel">
+    <div class="dropdown">
+      <button id="dropbutton">Pick level</button>
+        <div id="levelDropdown" class="dropdownSelect">
+          <a id="Lv1">Level 1</a>
+          <a id="Lv2">Level 2</a>
+          <a id="Lv3">Level 3</a>
+        </div>
+    </div>
 
-      <div>
-
-        <input type="radio" name="level" value="Lv1">Level 1
-
-      </div>
-
-      <input type="submit" value="Go" />
-
-    </form>
+    <button id="levelGo">Go</button>
 
     <p id="msg2"></p>
 
