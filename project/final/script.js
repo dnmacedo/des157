@@ -1,12 +1,16 @@
 document.addEventListener("DOMContentLoaded", function(event){
   console.log("DOM fully loaded and parsed");
 
+// declare pages
+
 var intro = document.getElementById("intro");
 var introGo = document.getElementById("introGo");
 var login = document.getElementById("login");
 var chooseLevel = document.getElementById("chooseLevel");
 var levelGo = document.getElementById("levelGo");
 var homepage = document.getElementById("homepage");
+var info = document.getElementById("info");
+var information = document.getElementById("information");
 
 intro.style.display="block";
 // homepage.style.display="block";
@@ -78,7 +82,6 @@ function processLogin() {
 
     //store user name in a variable
     var userName = document.login.userName.value;
-
     var greeting = document.getElementById("greeting");
 
     //error detection
@@ -109,9 +112,6 @@ dropbutton.addEventListener("click", function(){
     levelDropdown.classList.toggle("show");
   });
 
-var Lv1 = document.getElementById("Lv1");
-var Lv2 = document.getElementById("Lv2");
-var Lv3 = document.getElementById("Lv3");
 var level = document.querySelectorAll("a");
 
 for(var i=0; i< level.length; i++){
@@ -130,10 +130,15 @@ levelGo.addEventListener("click", function(){
 
       chooseLevel.style.display= "none";
       homepage.style.display= "block";
-
       // return false;
 
     });
+
+info.addEventListener("click", function(){
+  homepage.style.display = "none";
+  information.style.display = "block";
+});
+
 
 // start read interactions
 
