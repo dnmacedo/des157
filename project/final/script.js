@@ -14,8 +14,18 @@ var info = document.getElementById("info");
 var information = document.getElementById("information");
 var changeLevel = document.getElementById("changeLevel");
 var settings = document.getElementById("settings");
+var settingsPage = document.getElementById("settingsPage");
+var name = document.getElementById("name");
+var levelStatus = document.getElementById("levelStatus");
+var switches = document.getElementsByClassName("switch");
+var reset = document.getElementById("reset");
+var resetGame = document.getElementById("resetGame");
+var resetYes = document.getElementById("resetYes");
+var score = document.getElementById("score");
 var aboutApp = document.getElementById("aboutApp");
+var aboutAppPage = document.getElementById("aboutAppPage");
 var faq = document.getElementById("faq");
+var faqPage = document.getElementById("faqPage");
 
 var exitlinks = document.getElementsByClassName("exitlinks");
 var backlinks = document.getElementsByClassName("backlinks");
@@ -101,6 +111,7 @@ function processLogin() {
     }
 
     greeting.innerHTML='Hello, ' + userName + ', what would you like to work on today?';
+    name.innerHTML = userName;
 
     console.log("Your name is " + userName);
 
@@ -121,10 +132,13 @@ dropbutton.addEventListener("click", function(){
   });
 
 var level = document.querySelectorAll("a");
+var myLevel;
 
 for(var i=0; i< level.length; i++){
   level[i].addEventListener("click", function(){
     dropbutton.innerHTML = this.innerHTML;
+    this.value = myLevel;
+    console.log("You are on " + myLevel + "!");
 
     levelDropdown.className = "dropdownSelect";
 
@@ -133,7 +147,7 @@ for(var i=0; i< level.length; i++){
       // var levelStatus = document.getElementById("levelStatus");
 levelGo.addEventListener("click", function(){
 
-      console.log("You are on " + level + "!");
+      levelStatus.innerHTML = myLevel;
 
       chooseLevel.style.display= "none";
       homepage.style.display= "block";
@@ -148,6 +162,7 @@ info.addEventListener("click", function(){
   homepage.style.display = "none";
   information.style.display = "block";
 });
+
 
 var pickNewLevel = document.getElementById("pickNewLevel");
 
@@ -172,8 +187,69 @@ for(var i=0; i< level.length; i++){
   });
 }
 
+settings.addEventListener("click", function(){
+  information.style.display = "none";
+  settingsPage.style.display = "block";
+});
 
+switches[0].addEventListener("click", function(){
+  switches[0].innerHTML = "Off";
+});
 
+switches[1].addEventListener("click", function(){
+  switches[1].innerHTML = "Off";
+});
+
+reset.addEventListener("click", function(){
+  resetGame.style.display = "block";
+});
+
+resetYes.addEventListener("click", function(){
+  resetGame.style.display = "none";
+  score.innerHTML = "0";
+});
+
+aboutApp.addEventListener("click", function(){
+  information.style.display = "none";
+  aboutAppPage.style.display = "block";
+});
+
+faq.addEventListener("click", function(){
+  information.style.display = "none";
+  faqPage.style.display = "block";
+});
+
+// exit links to homepage
+exitlinks[0].addEventListener("click", function(){
+  information.style.display = "none";
+  homepage.style.display = "block";
+});
+
+// go back to previous page links
+backlinks[0].addEventListener("click", function(){
+  pickNewLevel.style.display = "none";
+  information.style.display = "block";
+});
+
+backlinks[1].addEventListener("click", function(){
+  settingsPage.style.display = "none";
+  information.style.display = "block";
+});
+
+backlinks[2].addEventListener("click", function(){
+  resetGame.style.display = "none";
+  settingsPage.style.display = "block";
+});
+
+backlinks[3].addEventListener("click", function(){
+  aboutAppPage.style.display = "none";
+  information.style.display = "block";
+});
+
+backlinks[4].addEventListener("click", function(){
+  faqPage.style.display = "none";
+  information.style.display = "block";
+});
 // start read interactions
 
 story1.addEventListener("click", function(){

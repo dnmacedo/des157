@@ -50,9 +50,9 @@
     <div class="dropdown">
       <button id="dropbutton">Pick level</button>
         <div id="levelDropdown" class="dropdownSelect">
-          <a id="Lv1">Level 1</a>
-          <a id="Lv2">Level 2</a>
-          <a id="Lv3">Level 3</a>
+          <a value="Lv1">Level 1</a>
+          <a value="Lv2">Level 2</a>
+          <a value="Lv3">Level 3</a>
         </div>
     </div>
 
@@ -86,8 +86,8 @@
       <a class="exitlinks"><img class="left" src="leftarrow.svg" alt="left arrow" width="50"> Home</a>
 
       <ul>
-        <li id="changeName">Name</li>
-        <li id="changeLevel">Level</li>
+        <li id="changeName">Name</li><p id="name"></p>
+        <li id="changeLevel">Level</li><p id="levelStatus"></p>
         <li id="settings">Settings</li>
         <li id="aboutApp">About</li>
         <li id="faq">Questions?</li>
@@ -108,6 +108,49 @@
           </div>
       </div>
 
+    </section>
+
+    <section id="settingsPage" class="pages" style="display:none;">
+
+      <a class="backlinks"><img class="left" src="leftarrow.svg" alt="left arrow" width="50">Back</a>
+
+      <ul>
+        <li>Instructions</li><p class="switch">On</p>
+        <li>Audio</li><p class="switch">On</p>
+        <li style="text-decoration:underline;" id="reset">Reset game data</li><p><a id="score">10</a>pts</p>
+      </ul>
+
+      <aside id="resetGame" style="display:none;">
+        <p>Reset all game data to 0?</p>
+
+        <a id="resetYes">Yes</a>
+        <a id="resetNo" class="backlinks">No</a>
+
+      </aside>
+
+    </section>
+
+    <section id="aboutAppPage" class="pages" style="display:none;">
+
+      <a class="backlinks"><img class="left" src="leftarrow.svg" alt="left arrow" width="50">Back</a>
+
+      <p style="padding:50px;text-align:left;">About this App<br><br>This app was created by Dani Macedo, college student of UC Davis for an interactive media class led by
+      professor Glenda Drew. <br> <br>She made this interface off of inspiration from a scientific article from her
+      psychology course about language and cognition. Knowing that people acquire different proficiencies in their
+      second language depending on what age they began being exposed to it, she wanted to focus on making something
+      that would help those who were less proficient and wanted to get better.
+      <br> <br>She designed this application to be a fun interactive learning tool
+      for those that want to perfect their English in quick and direct ways. Her goal is to help second-language
+      English speakers feel more confident in their English skills and more connected to the English-speaking community
+      around them.</p>
+
+    </section>
+
+    <section id="faqPage" class="pages" style="display:none;">
+
+      <a class="backlinks"><img class="left" src="leftarrow.svg" alt="left arrow" width="50">Back</a>
+
+      <p><a href="dnmacedo@ucdavis.edu">Email</a> me with any questions!</p>
     </section>
 
     <!-- The reading games -->
