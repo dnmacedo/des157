@@ -137,22 +137,25 @@ var myLevel;
 for(var i=0; i< level.length; i++){
   level[i].addEventListener("click", function(){
     dropbutton.innerHTML = this.innerHTML;
-    this.value = myLevel;
+    myLevel= this.innerHTML;
+    levelStatus.innerHTML = myLevel;
     console.log("You are on " + myLevel + "!");
 
     levelDropdown.className = "dropdownSelect";
-
   });
+
+
+    // var levelStatus = document.getElementById("levelStatus");
+    if(levelGo.clicked == true){
+
+    chooseLevel.style.display= "none";
+    homepage.style.display= "block";
+    // return false;
+    break;
+  }
+
 }
-      // var levelStatus = document.getElementById("levelStatus");
-levelGo.addEventListener("click", function(){
 
-      levelStatus.innerHTML = myLevel;
-
-      chooseLevel.style.display= "none";
-      homepage.style.display= "block";
-      // return false;
-    });
 
 
 
