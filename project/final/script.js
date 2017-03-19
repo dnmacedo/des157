@@ -8,9 +8,17 @@ var introGo = document.getElementById("introGo");
 var login = document.getElementById("login");
 var chooseLevel = document.getElementById("chooseLevel");
 var levelGo = document.getElementById("levelGo");
+
 var homepage = document.getElementById("homepage");
 var info = document.getElementById("info");
 var information = document.getElementById("information");
+var changeLevel = document.getElementById("changeLevel");
+var settings = document.getElementById("settings");
+var aboutApp = document.getElementById("aboutApp");
+var faq = document.getElementById("faq");
+
+var exitlinks = document.getElementsByClassName("exitlinks");
+var backlinks = document.getElementsByClassName("backlinks");
 
 intro.style.display="block";
 // homepage.style.display="block";
@@ -55,7 +63,7 @@ var wa = new Audio("audio/wa.mp3");
 var ya = new Audio("audio/ya.mp3");
 var za = new Audio("audio/za.mp3");
 
-var library = ["ba, cha, da, fa, ga, ha, ja, ka, la, ma, na, pa, qua, ra, sa, sha, ta, tha, va, wa, ya, za"];
+var library = ["ba", "cha", "da", "fa", "ga", "ha", "ja", "ka", "la", "ma", "na", "pa", "qua", "ra", "sa", "sha", "ta", "tha", "va", "wa", "ya", "za"];
 
 
 
@@ -71,8 +79,9 @@ introGo.addEventListener("click", function(){
 
 });
 
-// login function
 
+
+// login function
 console.log('reading');
 
 //capture the submit event
@@ -100,7 +109,6 @@ function processLogin() {
 
      //prevent page from reloading
      return false;
-
   }
 
 
@@ -122,7 +130,6 @@ for(var i=0; i< level.length; i++){
 
   });
 }
-
       // var levelStatus = document.getElementById("levelStatus");
 levelGo.addEventListener("click", function(){
 
@@ -131,13 +138,40 @@ levelGo.addEventListener("click", function(){
       chooseLevel.style.display= "none";
       homepage.style.display= "block";
       // return false;
-
     });
+
+
+
+  //start homepage commands
 
 info.addEventListener("click", function(){
   homepage.style.display = "none";
   information.style.display = "block";
 });
+
+var pickNewLevel = document.getElementById("pickNewLevel");
+
+changeLevel.addEventListener("click", function(){
+  information.style.display = "none";
+  pickNewLevel.style.display = "block";
+});
+
+var dropbutton2 = document.getElementById("dropbutton2");
+var levelDropdown2 = document.getElementById("levelDropdown2");
+
+dropbutton2.addEventListener("click", function(){
+    levelDropdown2.classList.toggle("show");
+  });
+
+for(var i=0; i< level.length; i++){
+  level[i].addEventListener("click", function(){
+    dropbutton2.innerHTML = this.innerHTML;
+
+    levelDropdown2.className = "dropdownSelect";
+
+  });
+}
+
 
 
 // start read interactions

@@ -83,15 +83,30 @@
 
     <section id="information" style="display:none;" class="pages">
 
-      <a class="exitlinks" href="#"><img class="left" src="leftarrow.svg" alt="left arrow" width="50"> Home</a>
+      <a class="exitlinks"><img class="left" src="leftarrow.svg" alt="left arrow" width="50"> Home</a>
 
       <ul>
-        <li>Name</li>
-        <li>Level</li>
-        <li>Settings</li>
-        <li>About</li>
-        <li>Questions?</li>
+        <li id="changeName">Name</li>
+        <li id="changeLevel">Level</li>
+        <li id="settings">Settings</li>
+        <li id="aboutApp">About</li>
+        <li id="faq">Questions?</li>
       </ul>
+
+    </section>
+
+    <section id="pickNewLevel" class="pages"  style="display:none;">
+
+      <a class="backlinks"><img class="left" src="leftarrow.svg" alt="left arrow" width="50">Back</a>
+
+      <div class="dropdown">
+        <button id="dropbutton2">Pick new level</button>
+          <div id="levelDropdown2" class="dropdownSelect">
+            <a>Level 1</a>
+            <a>Level 2</a>
+            <a>Level 3</a>
+          </div>
+      </div>
 
     </section>
 
