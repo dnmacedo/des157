@@ -150,9 +150,9 @@
 
     <!-- The reading games -->
 
-<section id="read">
+    <section id="readHome" class="pages homepages" style="display:none;">
 
-    <section id="readHome" class="pages" style="display:none;">
+      <a class="exitlinks"><img class="left" src="leftarrow.svg" alt="left arrow" width="50">Home</a>
 
       <h1>Pick a story</h1>
       <br>
@@ -166,27 +166,25 @@
 
     </section>
 
-    <section id="readI" class="pages instruction" style="display:none">
-
-      <a class="exitlinks" href="#"><img class="left" src="leftarrow.svg" alt="left arrow" width="50">Home</a>
-
-      <h2>Read a short story and answer the question afterward.</h2>
-
-      <button class="start">Start</button>
-
-    </section>
-
   <section id="story" class="pages" style="display:none;">
 
-    <a class="backlinks" href="#"><img class="left" src="leftarrow.svg" alt="left arrow" width="50">Back</a>
+    <a class="backlinks"><img class="left" src="leftarrow.svg" alt="left arrow" width="50">Back to game list</a>
 
-    <h2 id="storytitle"></h2>
+    <p id="storytitle"></p>
 
     <p id="storyblurb"></p>
 
       <button class="nextlinks">Next<img src="rightarrow.svg" alt="right arrow" width="50"></button>
 
   </section>
+
+  <aside class="pages instruction" style="display:none">
+
+    <p>Read a short story and answer the question afterward.</p>
+
+    <button id="beginStory">Start</button>
+
+  </aside>
 
   <section id="qs" class="pages" style="display:none;">
 
@@ -227,14 +225,12 @@
 
   </section>
 
-</section>
-
 
     <!-- The listening games -->
 
 <section id="listen">
 
-  <section id="listenHome" class="pages" style="display:none;">
+  <section id="listenHome" class="pages homepages" style="display:none;">
 
     <a class="exitlinks"><img class="left" src="leftarrow.svg" alt="left arrow" width="50">Home</a>
 

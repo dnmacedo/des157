@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(event){
   console.log("DOM fully loaded and parsed");
 
-// declare pages
+// declare intro variables
 
 var intro = document.getElementById("intro");
 var introGo = document.getElementById("introGo");
@@ -9,8 +9,15 @@ var login = document.getElementById("login");
 var chooseLevel = document.getElementById("chooseLevel");
 var levelGo = document.getElementById("levelGo");
 
+// declare homepage variables
 var homepage = document.getElementById("homepage");
 var info = document.getElementById("info");
+var readIcon = document.getElementById("readIcon");
+var speakIcon = document.getElementById("speakIcon");
+var listenIcon = document.getElementById("listenIcon");
+var writeIcon = document.getElementById("writeIcon");
+
+// declare information variables
 var information = document.getElementById("information");
 var changeLevel = document.getElementById("changeLevel");
 var settings = document.getElementById("settings");
@@ -27,20 +34,26 @@ var aboutAppPage = document.getElementById("aboutAppPage");
 var faq = document.getElementById("faq");
 var faqPage = document.getElementById("faqPage");
 
+// declare back and exit links
 var exitlinks = document.getElementsByClassName("exitlinks");
 var backlinks = document.getElementsByClassName("backlinks");
 
+// always start with this page when opened
 intro.style.display="block";
 // homepage.style.display="block";
 
+// readhome variables
+var readHome = document.getElementById("readHome");
+var homepages = document.getElementsByClassName("homepages");
+var gamesquares = document.getElementsByClassName("gamesquares");
+var instructions = document.getElementsByClassName("instruction");
+var beginStory = document.getElementById("beginStory");
+var story = document.getElementById("story");
 var myMsg = document.getElementById("myMsg");
-var story1 = document.getElementById("story1");
-var story2 = document.getElementById("story2");
-var story3 = document.getElementById("story3");
-var story4 = document.getElementById("story4");
-var story5 = document.getElementById("story5");
-var story6 = document.getElementById("story6");
 
+
+
+// read game variables
 var storytitle = document.getElementById("storytitle");
 var storyblurb = document.getElementById("storyblurb");
 var question = document.getElementById("question");
@@ -49,6 +62,8 @@ var opt2 = document.getElementById("opt2");
 var opt3 = document.getElementById("opt3");
 var opt4 = document.getElementById("opt4");
 var next = document.getElementById("next");
+
+// readHome.style.display = "block";
 
 var ba = new Audio("audio/ba.mp3");
 var cha = new Audio("audio/cha.mp3");
@@ -81,7 +96,7 @@ if(window.width >=450){
   alert("Please change the screen size to 'iPhone6' in the toggle device button to view this interface. (right click, inspect, phone/tablet symbol).");
 }
 
-// introduction
+// start introduction commands
 
 introGo.addEventListener("click", function(){
   intro.style.display= "none";
@@ -133,8 +148,9 @@ dropbutton.addEventListener("click", function(){
 
 var levels = document.getElementsByClassName("levels");
 var myLevel;
+var i;
 
-for(var i=0; i< levels.length; i++){
+for(i=0; i< levels.length; i++){
     levels[i].addEventListener("click", function(){
       dropbutton.innerHTML = this.innerHTML;
       myLevel= this.innerHTML;
@@ -155,7 +171,7 @@ for(var i=0; i< levels.length; i++){
   // return false;
   });
 
-
+// end pick level commands
 
 
   //start homepage commands
@@ -205,40 +221,35 @@ faq.addEventListener("click", function(){
   faqPage.style.display = "block";
 });
 
-// exit links to homepage
-exitlinks[0].addEventListener("click", function(){
-  information.style.display = "none";
-  homepage.style.display = "block";
+readIcon.addEventListener("click", function(){
+  homepage.style.display = "none";
+  readHome.style.display = "block";
 });
 
-// go back to previous page links
+// end homepage commands
 
-backlinks[0].addEventListener("click", function(){
-  settingsPage.style.display = "none";
-  information.style.display = "block";
-});
+// start read commands
 
-backlinks[1].addEventListener("click", function(){
-  resetGame.style.display = "none";
-  settingsPage.style.display = "block";
-});
+// show instructionsvar i;
 
-backlinks[2].addEventListener("click", function(){
-  aboutAppPage.style.display = "none";
-  information.style.display = "block";
-});
+for(i=0; i<gamesquares.length; i++){
+  gamesquares[i].addEventListener("click", function(){
+    readHome.style.display = "none";
+    story.style.display = "block";
+    instructions[0].style.display = "block";
+  });
 
-backlinks[3].addEventListener("click", function(){
-  faqPage.style.display = "none";
-  information.style.display = "block";
-});
-// start read interactions
+  beginStory.addEventListener("click", function(){
+    instructions[0].style.display = "none";
+  });
 
-story1.addEventListener("click", function(){
+}
+
+gamesquares[0].addEventListener("click", function(){
 
   storytitle.innerHTML = "Kabel starts the day...";
 
-  storyblurb.innerHTML = "Kabel is an aspiring actor. On his way to his audition for a big movie, he missed his bus! He thought, “No big deal, I’ve got plenty of time.” He decided to walk instead. Walking down the street he noticed a woman bent over picking up her belongings from the ground. Kabel said hello and offered to help, but the woman said, “NO!” This was unexpected, but nonetheless, Kabel happily continued walking. He saw a cat down an alley that soon followed him all the way to his destination.";
+  storyblurb.innerHTML = "Kabel is an aspiring actor. On his way to his audition for a big movie, he missed his bus! He thought, “No big deal, I’ve got plenty of time.” He decided to walk instead. Walking down the street he noticed a woman bent over picking up her belongings from the ground. Kabel said hello and o¬ffered to help, but the woman said, “NO!” This was unexpected, but nonetheless, Kabel happily continued walking. He saw a cat down an alley that soon followed him all the way to his destination.";
 
   question.innerHTML = "Where was Kabel going?";
 
@@ -249,7 +260,7 @@ story1.addEventListener("click", function(){
 
 });
 
-story2.addEventListener("click", function(){
+gamesquares[1].addEventListener("click", function(){
 
   storytitle.innerHTML = "Adam sits in the library...";
 
@@ -264,7 +275,7 @@ story2.addEventListener("click", function(){
 
 });
 
-story3.addEventListener("click", function(){
+gamesquares[2].addEventListener("click", function(){
 
   storytitle.innerHTML = "Vivian walks down the street...";
 
@@ -279,7 +290,7 @@ story3.addEventListener("click", function(){
 
 });
 
-story4.addEventListener("click", function(){
+gamesquares[3].addEventListener("click", function(){
 
   storytitle.innerHTML = " ";
 
@@ -289,7 +300,7 @@ story4.addEventListener("click", function(){
 
 });
 
-story5.addEventListener("click", function(){
+gamesquares[4].addEventListener("click", function(){
 
   storytitle.innerHTML = " ";
 
@@ -299,7 +310,7 @@ story5.addEventListener("click", function(){
 
 });
 
-story6.addEventListener("click", function(){
+gamesquares[5].addEventListener("click", function(){
 
   storytitle.innerHTML = " ";
 
@@ -309,14 +320,57 @@ story6.addEventListener("click", function(){
 
 
 });
+
 
 // end read.html commands
 
 // start listen.html commands
 
+// end listen.html commands
 
 
+// start exit and back link commands
+
+  // exit links to homepage
+  exitlinks[0].addEventListener("click", function(){
+    information.style.display = "none";
+    homepage.style.display = "block";
+  });
+
+  exitlinks[1].addEventListener("click", function(){
+    readHome.style.display = "none";
+    homepage.style.display = "block";
+  });
+
+  // go back to previous page links
+
+  backlinks[0].addEventListener("click", function(){
+    settingsPage.style.display = "none";
+    information.style.display = "block";
+  });
+
+  backlinks[1].addEventListener("click", function(){
+    resetGame.style.display = "none";
+    settingsPage.style.display = "block";
+  });
+
+  backlinks[2].addEventListener("click", function(){
+    aboutAppPage.style.display = "none";
+    information.style.display = "block";
+  });
+
+  backlinks[3].addEventListener("click", function(){
+    faqPage.style.display = "none";
+    information.style.display = "block";
+  });
+
+  backlinks[4].addEventListener("click", function(){
+    story.style.display = "none";
+    readHome.style.display = "block";
+  });
+
+// end exit and back links
 
 
-
+// end of js code
 });
