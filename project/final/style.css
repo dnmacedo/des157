@@ -207,13 +207,17 @@ li {
 }
 
 #information p {
+
+}
+
+#name, #levelStatus {
   text-align: center;
   display: inline-block;
   width: 250px;
   padding: 20px 0;
 }
 
-#settingsPage p {
+.switch {
   text-align: center;
   display: inline-block;
   width: 200px;
