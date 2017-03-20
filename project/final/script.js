@@ -33,6 +33,7 @@ var aboutApp = document.getElementById("aboutApp");
 var aboutAppPage = document.getElementById("aboutAppPage");
 var faq = document.getElementById("faq");
 var faqPage = document.getElementById("faqPage");
+var prompt = document.getElementById("prompt");
 
 // declare back and exit links
 var exitlinks = document.getElementsByClassName("exitlinks");
@@ -232,6 +233,21 @@ readIcon.addEventListener("click", function(){
   readHome.style.display = "block";
 });
 
+listenIcon.addEventListener("click", function(){
+  homepage.style.display = "none";
+  prompt.style.display = "block";
+});
+
+speakIcon.addEventListener("click", function(){
+  homepage.style.display = "none";
+  prompt.style.display = "block";
+});
+
+writeIcon.addEventListener("click", function(){
+  homepage.style.display = "none";
+  prompt.style.display = "block";
+});
+
 // end homepage commands
 
 // start read commands
@@ -247,11 +263,6 @@ for(i=0; i<gamesquares.length; i++){
 
   beginStory.addEventListener("click", function(){
     instructions[0].style.display = "none";
-  });
-
-  nextlinks[0].addEventListener("click", function(){
-    story.style.display ="none";
-    qs.style.display = "block";
   });
 
 }
@@ -332,7 +343,7 @@ gamesquares[3].addEventListener("click", function(){
 
   storyblurb.innerHTML = "More stories coming soon!";
 
-  next.style.display = "none";
+  nextlinks.style.display = "none";
 
 });
 
@@ -342,7 +353,7 @@ gamesquares[4].addEventListener("click", function(){
 
   storyblurb.innerHTML = "More stories coming soon!";
 
-  next.style.display = "none";
+  nextlinks.style.display = "none";
 
 });
 
@@ -352,7 +363,7 @@ gamesquares[5].addEventListener("click", function(){
 
   storyblurb.innerHTML = "More stories coming soon!";
 
-  next.style.display = "none";
+  nextlinks.style.display = "none";
 
 
 });
@@ -365,7 +376,7 @@ gamesquares[5].addEventListener("click", function(){
 // end listen.html commands
 
 
-// start exit and back link commands
+// start exit back and next link commands
 
   // exit links to homepage
   exitlinks[0].addEventListener("click", function(){
@@ -378,6 +389,20 @@ gamesquares[5].addEventListener("click", function(){
     homepage.style.display = "block";
   });
 
+  exitlinks[2].addEventListener("click", function(){
+    goodjob.style.display = "none";
+    homepage.style.display = "block";
+  });
+
+  exitlinks[3].addEventListener("click", function(){
+    wronganswer.style.display = "none";
+    homepage.style.display = "block";
+  });
+
+  exitlinks[4].addEventListener("click", function(){
+    prompt.style.display = "none";
+    homepage.style.display = "block";
+  });
   // go back to previous page links
 
   backlinks[0].addEventListener("click", function(){
@@ -405,7 +430,23 @@ gamesquares[5].addEventListener("click", function(){
     readHome.style.display = "block";
   });
 
-// end exit and back links
+  // next links
+  nextlinks[0].addEventListener("click", function(){
+    story.style.display ="none";
+    qs.style.display = "block";
+  });
+
+  nextlinks[1].addEventListener("click", function(){
+    goodjob.style.display ="none";
+    readHome.style.display = "block";
+  });
+
+  nextlinks[2].addEventListener("click", function(){
+    wronganswer.style.display ="none";
+    readHome.style.display = "block";
+  });
+
+// end exit back and next links
 
 
 // end of js code
