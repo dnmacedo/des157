@@ -202,28 +202,29 @@ ul {
 li {
   display: inline-block;
   margin: 0;
-  width: 600px;
-  padding: 30px 0;
+  width: 800px;
+  margin: 30px 0;
 }
 
-#information p {
-
+#settingsPage li {
+  width: 770px;
+  background-color: white;
+  border-radius: 30px;
+  margin: 20px 0;
+  padding: 20px;
 }
 
-#name, #levelStatus {
+#name, #levelStatus, .switch, #score {
   text-align: center;
   display: inline-block;
   width: 250px;
-  padding: 20px 0;
+  float: right;
 }
 
-.switch {
-  text-align: center;
-  display: inline-block;
-  width: 200px;
-  padding: 20px 0;
-  background-color: white;
-  border-radius: 30px;
+#score {
+  width: 100px;
+  float: none;
+  margin-left: 50px;
 }
 
 #resetGame {
