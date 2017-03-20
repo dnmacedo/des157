@@ -2,12 +2,15 @@ document.addEventListener("DOMContentLoaded", function(event){
   console.log("DOM fully loaded and parsed");
 
 // declare intro variables
-
+var imptMsg = document.getElementById("imptMsg");
+var ok = document.getElementById("ok");
 var intro = document.getElementById("intro");
 var introGo = document.getElementById("introGo");
 var login = document.getElementById("login");
 var chooseLevel = document.getElementById("chooseLevel");
 var levelGo = document.getElementById("levelGo");
+
+imptMsg.style.display = "block";
 
 // declare homepage variables
 var homepage = document.getElementById("homepage");
@@ -41,7 +44,7 @@ var backlinks = document.getElementsByClassName("backlinks");
 var nextlinks = document.getElementsByClassName("nextlinks");
 
 // always start with this page when opened
-intro.style.display="block";
+
 // homepage.style.display="block";
 
 // readhome variables
@@ -97,11 +100,12 @@ var za = new Audio("audio/za.mp3");
 
 var library = ["ba", "cha", "da", "fa", "ga", "ha", "ja", "ka", "la", "ma", "na", "pa", "qua", "ra", "sa", "sha", "ta", "tha", "va", "wa", "ya", "za"];
 
+// prompt user to change view
+ok.addEventListener("click", function(){
+  imptMsg.style.display = "none";
+  intro.style.display="block";
 
-
-if(window.width >=450){
-  alert("Please change the screen size to 'iPhone6' in the toggle device button to view this interface. (right click, inspect, phone/tablet symbol).");
-}
+});
 
 // start introduction commands
 
@@ -444,6 +448,18 @@ gamesquares[5].addEventListener("click", function(){
   nextlinks[2].addEventListener("click", function(){
     wronganswer.style.display ="none";
     readHome.style.display = "block";
+  });
+
+  // try again links
+
+  tryagain[0].addEventListener("click", function(){
+    goodjob.style.display = "none";
+    story.style.display = "block";
+  });
+
+  tryagain[1].addEventListener("click", function(){
+    wronganswer.style.display = "none";
+    story.style.display = "block";
   });
 
 // end exit back and next links

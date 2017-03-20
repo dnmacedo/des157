@@ -91,7 +91,22 @@ body {
   border-color: transparent;
 }
 
+#imptMsg p {
+  font-size: 50px;
+  padding-top: 100px;
+}
 
+#ok {
+  position: relative;
+  display: block;
+  background-color: white;
+  border-radius: 30px;
+  width: 100px;
+  padding: 20px;
+  text-align: center;
+  margin: auto;
+
+}
 /*.pages input {
   display: block;
   font-size: 70px;
