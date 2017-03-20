@@ -19,6 +19,9 @@ var readIcon = document.getElementById("readIcon");
 var speakIcon = document.getElementById("speakIcon");
 var listenIcon = document.getElementById("listenIcon");
 var writeIcon = document.getElementById("writeIcon");
+var listen = document.getElementById("listen");
+var speak = document.getElementById("speak");
+var write = document.getElementById("write");
 
 // declare information variables
 var information = document.getElementById("information");
@@ -240,17 +243,17 @@ readIcon.addEventListener("click", function(){
 
 listenIcon.addEventListener("click", function(){
   homepage.style.display = "none";
-  prompt.style.display = "block";
+  listen.style.display = "block";
 });
 
 speakIcon.addEventListener("click", function(){
   homepage.style.display = "none";
-  prompt.style.display = "block";
+  speak.style.display = "block";
 });
 
 writeIcon.addEventListener("click", function(){
   homepage.style.display = "none";
-  prompt.style.display = "block";
+  write.style.display = "block";
 });
 
 // end homepage commands
@@ -409,7 +412,17 @@ gamesquares[5].addEventListener("click", function(){
   });
 
   exitlinks[4].addEventListener("click", function(){
-    prompt.style.display = "none";
+    speak.style.display = "none";
+    homepage.style.display = "block";
+  });
+
+  exitlinks[5].addEventListener("click", function(){
+    write.style.display = "none";
+    homepage.style.display = "block";
+  });
+
+  exitlinks[6].addEventListener("click", function(){
+    listen.style.display = "none";
     homepage.style.display = "block";
   });
   // go back to previous page links
