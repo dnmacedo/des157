@@ -13,7 +13,7 @@
 
 <body>
 
-  <!-- I would like to do a quick intro here, like submit a name and level before the interface opens -->
+  <!-- Quick intro to the game -->
 
   <section id="intro" class="pages" style="display:none;">
     <p>Welcome- you're about to embark on a journey! <br> <br>In this interface you will build a beautiful
@@ -23,6 +23,8 @@
     <button id="introGo">Go</button>
 
   </section>
+
+  <!-- login page -->
 
   <section id="login" class="pages" style="display:none;">
 
@@ -43,6 +45,8 @@
 
   </section>
 
+  <!-- choosing level, "Go" goes straight to homepage, even if changed later so that all the games can reset -->
+
   <section id="chooseLevel" style="display:none;" class="pages">
 
     <p>Choose a level <br><br></p>
@@ -61,6 +65,8 @@
     <p id="msg2"></p>
 
   </section>
+
+  <!-- homepage! -->
 
     <main id="homepage" style="display:none;" class="pages">
 
@@ -81,6 +87,8 @@
 
     </main>
 
+    <!-- information page after clicking "i" -->
+
     <section id="information" style="display:none;" class="pages">
 
       <a class="exitlinks"><img class="left" src="leftarrow.svg" alt="left arrow" width="50"> Home</a>
@@ -94,6 +102,8 @@
       </ul>
 
     </section>
+
+    <!-- settings page open -->
 
     <section id="settingsPage" class="pages" style="display:none;">
 
@@ -142,16 +152,6 @@
 
 <section id="read">
 
-    <section class="pages instruction" style="display:none">
-
-      <a class="exitlinks" href="#"><img class="left" src="leftarrow.svg" alt="left arrow" width="50">Home</a>
-
-      <h2>Read a short story and answer the question afterward.</h2>
-
-      <button class="start">Start</button>
-
-    </section>
-
     <section id="readHome" class="pages" style="display:none;">
 
       <h1>Pick a story</h1>
@@ -163,6 +163,16 @@
       <a class="gamesquares" id="story4" href="#story">4</a>
       <a class="gamesquares" id="story5" href="#story">5</a>
       <a class="gamesquares" id="story6" href="#story">6</a>
+
+    </section>
+
+    <section id="readI" class="pages instruction" style="display:none">
+
+      <a class="exitlinks" href="#"><img class="left" src="leftarrow.svg" alt="left arrow" width="50">Home</a>
+
+      <h2>Read a short story and answer the question afterward.</h2>
+
+      <button class="start">Start</button>
 
     </section>
 
