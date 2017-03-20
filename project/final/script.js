@@ -131,30 +131,29 @@ dropbutton.addEventListener("click", function(){
     levelDropdown.classList.toggle("show");
   });
 
-var level = document.querySelectorAll("a");
+var levels = document.getElementsByClassName("levels");
 var myLevel;
 
-for(var i=0; i< level.length; i++){
-  level[i].addEventListener("click", function(){
-    dropbutton.innerHTML = this.innerHTML;
-    myLevel= this.innerHTML;
-    levelStatus.innerHTML = myLevel;
-    console.log("You are on " + myLevel + "!");
+for(var i=0; i< levels.length; i++){
+    levels[i].addEventListener("click", function(){
+      dropbutton.innerHTML = this.innerHTML;
+      myLevel= this.innerHTML;
+      console.log("You are on " + myLevel + "!");
 
-    levelDropdown.className = "dropdownSelect";
-  });
-
-
-    // var levelStatus = document.getElementById("levelStatus");
-    if(levelGo.clicked == true){
-
-    chooseLevel.style.display= "none";
-    homepage.style.display= "block";
-    // return false;
-    break;
+      levelDropdown.className = "dropdownSelect";
+    });
+      // var levelStatus = document.getElementById("levelStatus");
   }
 
-}
+
+  levelGo.addEventListener("click", function(){
+  levelStatus.innerHTML = myLevel;
+
+  chooseLevel.style.display= "none";
+  homepage.style.display= "block";
+
+  // return false;
+  });
 
 
 
@@ -171,24 +170,8 @@ var pickNewLevel = document.getElementById("pickNewLevel");
 
 changeLevel.addEventListener("click", function(){
   information.style.display = "none";
-  pickNewLevel.style.display = "block";
+  chooseLevel.style.display = "block";
 });
-
-var dropbutton2 = document.getElementById("dropbutton2");
-var levelDropdown2 = document.getElementById("levelDropdown2");
-
-dropbutton2.addEventListener("click", function(){
-    levelDropdown2.classList.toggle("show");
-  });
-
-for(var i=0; i< level.length; i++){
-  level[i].addEventListener("click", function(){
-    dropbutton2.innerHTML = this.innerHTML;
-
-    levelDropdown2.className = "dropdownSelect";
-
-  });
-}
 
 settings.addEventListener("click", function(){
   information.style.display = "none";
@@ -229,27 +212,23 @@ exitlinks[0].addEventListener("click", function(){
 });
 
 // go back to previous page links
-backlinks[0].addEventListener("click", function(){
-  pickNewLevel.style.display = "none";
-  information.style.display = "block";
-});
 
-backlinks[1].addEventListener("click", function(){
+backlinks[0].addEventListener("click", function(){
   settingsPage.style.display = "none";
   information.style.display = "block";
 });
 
-backlinks[2].addEventListener("click", function(){
+backlinks[1].addEventListener("click", function(){
   resetGame.style.display = "none";
   settingsPage.style.display = "block";
 });
 
-backlinks[3].addEventListener("click", function(){
+backlinks[2].addEventListener("click", function(){
   aboutAppPage.style.display = "none";
   information.style.display = "block";
 });
 
-backlinks[4].addEventListener("click", function(){
+backlinks[3].addEventListener("click", function(){
   faqPage.style.display = "none";
   information.style.display = "block";
 });
