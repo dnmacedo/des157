@@ -42,6 +42,7 @@ var prompt = document.getElementById("prompt");
 var exitlinks = document.getElementsByClassName("exitlinks");
 var backlinks = document.getElementsByClassName("backlinks");
 var nextlinks = document.getElementsByClassName("nextlinks");
+var tryagain = document.getElementsByClassName("tryagain");
 
 // always start with this page when opened
 
@@ -70,8 +71,8 @@ var opt3 = document.getElementById("opt3");
 var opt4 = document.getElementById("opt4");
 var next = document.getElementById("next");
 
-var wronganswer = document.getElementsByClassName("wronganswer");
-var goodjob = document.getElementsByClassName("goodjob");
+var wronganswer = document.getElementById("wronganswer");
+var goodjob = document.getElementById("goodjob");
 
 // readHome.style.display = "block";
 

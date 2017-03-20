@@ -309,9 +309,14 @@ li {
 
 #qs {}
 
-.goodjob {}
+#goodjob button, #wronganswer button {
+  margin-top: 100px;
+}
 
-.wronganswer {}
+.thumbsup {
+  display: block;
+  margin: auto;
+}
 
 #listenHome {}
 
