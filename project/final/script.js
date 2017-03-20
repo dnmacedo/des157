@@ -324,6 +324,8 @@ gamesquares[1].addEventListener("click", function(){
   options[2].innerHTML = "in a library";
   options[3].innerHTML = "at a bar";
 
+  revealAnswer();
+
 
 });
 
@@ -339,6 +341,8 @@ gamesquares[2].addEventListener("click", function(){
   options[1].innerHTML = "a crime scene";
   options[2].innerHTML = "a suprise party";
   options[3].innerHTML = "a big mess";
+
+  revealAnswer();
 
 });
 
