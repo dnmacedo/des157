@@ -307,6 +307,10 @@ li {
   padding: 100px;
 }
 
+#story h1 {
+  padding-bottom: 0;
+}
+
 #qs {}
 
 #goodjob button, #wronganswer button {
