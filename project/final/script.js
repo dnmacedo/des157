@@ -37,6 +37,7 @@ var faqPage = document.getElementById("faqPage");
 // declare back and exit links
 var exitlinks = document.getElementsByClassName("exitlinks");
 var backlinks = document.getElementsByClassName("backlinks");
+var nextlinks = document.getElementsByClassName("nextlinks");
 
 // always start with this page when opened
 intro.style.display="block";
@@ -56,12 +57,17 @@ var myMsg = document.getElementById("myMsg");
 // read game variables
 var storytitle = document.getElementById("storytitle");
 var storyblurb = document.getElementById("storyblurb");
+var qs = document.getElementById("qs");
 var question = document.getElementById("question");
+var options = document.getElementsByClassName("options");
 var opt1 = document.getElementById("opt1");
 var opt2 = document.getElementById("opt2");
 var opt3 = document.getElementById("opt3");
 var opt4 = document.getElementById("opt4");
 var next = document.getElementById("next");
+
+var wronganswer = document.getElementsByClassName("wronganswer");
+var goodjob = document.getElementsByClassName("goodjob");
 
 // readHome.style.display = "block";
 
@@ -243,7 +249,33 @@ for(i=0; i<gamesquares.length; i++){
     instructions[0].style.display = "none";
   });
 
+  nextlinks[0].addEventListener("click", function(){
+    story.style.display ="none";
+    qs.style.display = "block";
+  });
+
 }
+
+function revealAnswer(){
+  options[2].addEventListener("click", function(){
+    qs.style.display = "none";
+    goodjob.style.display = "block";
+  });
+  options[0].addEventListener("click", function(){
+    qs.style.display = "none";
+    wronganswer.style.display = "block";
+  });
+  options[1].addEventListener("click", function(){
+    qs.style.display = "none";
+    wronganswer.style.display = "block";
+  });
+  options[3].addEventListener("click", function(){
+    qs.style.display = "none";
+    wronganswer.style.display = "block";
+  });
+
+}
+
 
 gamesquares[0].addEventListener("click", function(){
 
@@ -253,10 +285,13 @@ gamesquares[0].addEventListener("click", function(){
 
   question.innerHTML = "Where was Kabel going?";
 
-  opt1.innerHTML = "to lunch";
-  opt2.innerHTML = "to grab a cup of coffee";
-  opt3.innerHTML = "to his audition";
-  opt4.innerHTML = "to the library";
+
+  options[0].innerHTML = "to lunch";
+  options[1].innerHTML = "to grab a cup of coffee";
+  options[2].innerHTML = "to his audition";
+  options[3].innerHTML = "to the library";
+
+  revealAnswer();
 
 });
 
@@ -268,10 +303,11 @@ gamesquares[1].addEventListener("click", function(){
 
   question.innerHTML = "Where was Adam sitting?";
 
-  opt1.innerHTML = "a coffee shop";
-  opt2.innerHTML = "his friend's house";
-  opt3.innerHTML = "in a library";
-  opt4.innerHTML = "at a bar";
+  options[0].innerHTML = "a coffee shop";
+  options[1].innerHTML = "his friend's house";
+  options[2].innerHTML = "in a library";
+  options[3].innerHTML = "at a bar";
+
 
 });
 
@@ -283,10 +319,10 @@ gamesquares[2].addEventListener("click", function(){
 
   question.innerHTML = "What did Vivian find in the house?";
 
-  opt1.innerHTML = "a robber";
-  opt2.innerHTML = "a crime scene";
-  opt3.innerHTML = "a suprise party";
-  opt4.innerHTML = "a big mess";
+  options[0].innerHTML = "a robber";
+  options[1].innerHTML = "a crime scene";
+  options[2].innerHTML = "a suprise party";
+  options[3].innerHTML = "a big mess";
 
 });
 
